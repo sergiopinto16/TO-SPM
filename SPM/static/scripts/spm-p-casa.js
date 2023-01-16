@@ -1,6 +1,20 @@
+
+var res_array_questions = [];
+var res_array_group = [];
+
+
+classificacao_nivel_01 = "Típica (40 - 59)";
+classificacao_nivel_02 = "Disfunção Provável (60 - 69)";
+classificacao_nivel_03 = "Disfunção Estabelecida (70 - 80)";
+
+
+let tscore_total = 0;
+
+
+
 $(document).ready(function () {
 
-
+    show_chart();
 
 
 });
@@ -19,16 +33,6 @@ function checkArray($checkbox) {
         .map((_, el) => el.get("value"))
         .get();
 }
-
-const res_array_questions = [];
-const res_array_group = [];
-
-classificacao_nivel_01 = "Típica (40 - 59)";
-classificacao_nivel_02 = "Disfunção Provável (60 - 69)";
-classificacao_nivel_03 = "Disfunção Estabelecida (70 - 80)";
-
-
-let tscore_total = 0;
 
 
 function calc_participacao_social() {
@@ -1308,9 +1312,9 @@ function calc_tscore_total() {
 }
 
 function calc_spm_p() {
-    
+
     tscore_total = 0;
-    
+
     //res_participacao_social
     calc_participacao_social();
 
@@ -1331,7 +1335,67 @@ function calc_spm_p() {
 
 
     calc_tscore_total();
+
+    show_chart();
 }
+
+
+
+
+
+function show_chart() {
+    var ctx = document.getElementById('chart_spm-p-casa');
+
+
+    var data = {
+        labels: ["Participação social", "Visão", "Audição", "Toque", "Gosto e Olfato",
+            "Consciência Corporal", "Movimente e Equilibrio", "Planeamento Motor e Ideação",
+            "TScore Total"],
+        datasets: [{
+            label: 'T-SCORE',
+            data: [parseInt(res_array_group[0]), parseInt(res_array_group[1]), parseInt(res_array_group[2]),
+            parseInt(res_array_group[3]), parseInt(res_array_group[4]), parseInt(res_array_group[5]),
+            parseInt(res_array_group[6]), parseInt(res_array_group[7]), parseInt(res_array_group[8])
+            ]
+        }]
+    };
+
+    //CanvasBackgroundColor plugin block
+    const canvasBackgroundColor = {
+        id: 'canvasBackgroundColor',
+        beforeDraw(chart, args, pluginsOptions) {
+            console.log(chart);
+        }
+    };
+    //config
+    const config = {
+        type: 'bar',
+        title: {
+            text: "SPM-p CASA"
+        },
+        /** Set axisY properties here*/
+        axisY: {
+            title: "T-SCORE",
+            titleFontSize: 24,
+            includeZero: true
+        },
+        data,
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        },
+        plugins: [canvasBackgroundColor]
+    };
+
+
+    const chart = new Chart(ctx, config);
+    console.log("Chart render");
+    chart.render();
+}
+
 
 function onlyOneCheckBox(ele) {
 
