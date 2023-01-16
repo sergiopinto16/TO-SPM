@@ -1,6 +1,8 @@
 
 var res_array_questions = [];
 var res_array_group = [];
+var res_array_tscore = [];
+var res_array_classificacao = [];
 
 for (let i_array = 0; i_array <= 8; i_array++) {
     res_array_group[i_array] = 0;
@@ -176,8 +178,9 @@ function calc_participacao_social() {
     document.getElementById(classificacao_group_name).innerHTML = classificacao_group;
 
     res_array_group[0] = tscore_group;
-
+    res_array_classificacao[0] = classificacao_group;
     tscore_total += parseInt(tscore_group);
+
 
 }
 
@@ -338,7 +341,7 @@ function calc_visao() {
     document.getElementById(classificacao_group_name).innerHTML = classificacao_group;
 
     res_array_group[1] = tscore_group;
-
+    res_array_classificacao[1] = classificacao_group;
     tscore_total += parseInt(tscore_group);
 }
 
@@ -488,6 +491,7 @@ function calc_audicao() {
     document.getElementById(classificacao_group_name).innerHTML = classificacao_group;
 
     res_array_group[2] = tscore_group;
+    res_array_classificacao[2] = classificacao_group;
 
     tscore_total += parseInt(tscore_group);
 
@@ -644,6 +648,7 @@ function calc_toque() {
     document.getElementById(classificacao_group_name).innerHTML = classificacao_group;
 
     res_array_group[3] = tscore_group;
+    res_array_classificacao[3] = classificacao_group;
 
     tscore_total += parseInt(tscore_group);
 
@@ -705,6 +710,7 @@ function calc_gosto_e_olfato() {
     //document.getElementById(classificacao_group_name).innerHTML = classificacao_group;
 
     res_array_group[4] = tscore_group;
+    res_array_classificacao[4] = classificacao_group;
 
     tscore_total += parseInt(tscore_group);
 
@@ -846,6 +852,7 @@ function calc_consciencia_corporal() {
 
 
     res_array_group[5] = tscore_group;
+    res_array_classificacao[5] = classificacao_group;
 
 
     tscore_total += parseInt(tscore_group);
@@ -977,6 +984,7 @@ function calc_movimento_e_equilibrio() {
     document.getElementById(classificacao_group_name).innerHTML = classificacao_group;
 
     res_array_group[6] = tscore_group;
+    res_array_classificacao[6] = classificacao_group;
 
     tscore_total += parseInt(tscore_group);
 
@@ -1125,6 +1133,7 @@ function calc_planeamento_motor_e_ideacao() {
     document.getElementById(classificacao_group_name).innerHTML = classificacao_group;
 
     res_array_group[7] = tscore_group;
+    res_array_classificacao[7] = classificacao_group;
 
 
     tscore_total += parseInt(tscore_group);
@@ -1310,6 +1319,7 @@ function calc_tscore_total() {
     document.getElementById('classificacao_total').innerHTML = classificacao_group;
 
     res_array_group[8] = tscore_group;
+    res_array_classificacao[8] = classificacao_group;
 
 
 
@@ -1341,6 +1351,27 @@ function calc_spm_p() {
     calc_tscore_total();
 
     show_chart();
+
+
+    document.getElementById('table_tscore_participaco_social').innerHTML = res_array_group[0];
+    document.getElementById('table_classificacao_participacao_social').innerHTML = res_array_classificacao[0];
+    document.getElementById('table_tscore_visao').innerHTML = res_array_group[1];
+    document.getElementById('table_classificacao_visao').innerHTML = res_array_classificacao[1];
+    document.getElementById('table_tscore_audicao').innerHTML = res_array_group[2];
+    document.getElementById('table_classificacao_audicao').innerHTML = res_array_classificacao[2];
+    document.getElementById('table_tscore_toque').innerHTML = res_array_group[3];
+    document.getElementById('table_classificacao_toque').innerHTML = res_array_classificacao[3];
+    document.getElementById('table_tscore_gosto_e_olfato').innerHTML = res_array_group[4];
+    document.getElementById('table_classificacao_gosto_e_olfato').innerHTML = res_array_classificacao[4];
+    document.getElementById('table_tscore_consciencia_corporal').innerHTML = res_array_group[5];
+    document.getElementById('table_classificacao_consciencia_corporal').innerHTML = res_array_classificacao[5];
+    document.getElementById('table_tscore_movimento_e_equilibrio').innerHTML = res_array_group[6];
+    document.getElementById('table_classificacao_movimento_e_equilibrio').innerHTML = res_array_classificacao[6];
+    document.getElementById('table_tscore_planeamento_motor_e_ideacao').innerHTML = res_array_group[7];
+    document.getElementById('table_classificacao_planeamento_motor_e_ideacao').innerHTML = res_array_classificacao[7];
+    document.getElementById('table_tscore_total').innerHTML = res_array_group[8];
+    document.getElementById('table_classificacao_total').innerHTML = res_array_classificacao[8];
+
 }
 
 
@@ -1375,10 +1406,21 @@ function show_chart() {
                 ],
                 xName: 'avaliacao',
                 yName: 'ponts',
+                marker: {
+                    dataLabel: { visible: true }
+                }
                 
             }
         ],
         tooltip: {enable: true},
+        options: {
+            animation: {
+              onComplete: function () {
+                console.log("Creating image")
+                console.log(chart.toBase64Image());
+              },
+            },
+        },
     });
 
     chart.appendTo('#chart_spm-p-casa');

@@ -17,3 +17,16 @@ tr:first-child{
 }
 
  
+.table_tr{
+    background-color: rgb(118, 206, 132);
+    color: #000;
+}
+.table_tr:nth-child(odd){
+    background-color: rgb(102, 126, 106);
+    color: #000;
+}
+
+.table_td-center {
+    text-align: center;
+}
+
