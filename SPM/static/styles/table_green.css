@@ -1,0 +1,32 @@
+td{
+    padding: 6px;
+  }
+
+tr:nth-child(odd){
+    background-color: #b5f3ad;
+    color: #000;
+}
+
+tr:first-child{
+    background-color: rgb(148, 148, 148);
+    color: #fff;
+}
+
+.checkbox-center {
+    text-align: center;
+}
+
+ 
+.table_tr{
+    background-color: rgb(118, 206, 132);
+    color: #000;
+}
+.table_tr:nth-child(odd){
+    background-color: rgb(102, 126, 106);
+    color: #000;
+}
+
+.table_td-center {
+    text-align: center;
+}
+

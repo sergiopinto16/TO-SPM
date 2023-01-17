@@ -50,7 +50,7 @@ function calc_participacao_social() {
 
 
     let indexquestion_start = 1;
-    let indexquestion_end = 8;
+    let indexquestion_end = 10;
 
     let res_group = 0;
 
@@ -192,8 +192,8 @@ function calc_visao() {
     tscore_group_name = "tscore_visao"
     classificacao_group_name = "classificacao_visao"
 
-    let indexquestion_start = 9;
-    let indexquestion_end = 19;
+    let indexquestion_start = 11;
+    let indexquestion_end = 17;
 
     let res_group = 0;
 
@@ -353,8 +353,8 @@ function calc_audicao() {
     tscore_group_name = "tscore_audicao"
     classificacao_group_name = "classificacao_audicao"
 
-    let indexquestion_start = 20;
-    let indexquestion_end = 28;
+    let indexquestion_start = 18;
+    let indexquestion_end = 24;
 
     let res_group = 0;
 
@@ -505,8 +505,8 @@ function calc_toque() {
     tscore_group_name = "tscore_toque"
     classificacao_group_name = "classificacao_toque"
 
-    let indexquestion_start = 29;
-    let indexquestion_end = 42;
+    let indexquestion_start = 25;
+    let indexquestion_end = 32;
 
     let res_group = 0;
 
@@ -664,8 +664,8 @@ function calc_gosto_e_olfato() {
 
 
 
-    let indexquestion_start = 43;
-    let indexquestion_end = 46;
+    let indexquestion_start = 33;
+    let indexquestion_end = 43;
 
     let res_group = 0;
 
@@ -725,8 +725,8 @@ function calc_consciencia_corporal() {
     tscore_group_name = "tscore_consciencia_corporal"
     classificacao_group_name = "classificacao_consciencia_corporal"
 
-    let indexquestion_start = 47;
-    let indexquestion_end = 55;
+    let indexquestion_start = 44;
+    let indexquestion_end = 52;
 
     let res_group = 0;
 
@@ -868,8 +868,8 @@ function calc_movimento_e_equilibrio() {
     classificacao_group_name = "classificacao_movimento_e_equilibrio"
 
 
-    let indexquestion_start = 56;
-    let indexquestion_end = 66;
+    let indexquestion_start = 53;
+    let indexquestion_end = 62;
 
     let res_group = 0;
 

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>TO SPM-p Casa</title>
+    <title>TO SPM ESCOLA</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="static/styles/style.css">
-    <link rel="stylesheet" href="static/styles/table.css">
+    <link rel="stylesheet" href="static/styles/table_yellow.css">
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>    
     <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
-    <script src="static/scripts/charts-spm-escola.js"></script>
+    <!-- <script src="static/scripts/charts-spm-escola.js"></script> -->
     <script src="static/scripts/spm-escola.js"></script>
 
 
@@ -50,10 +50,10 @@
             <i class="fa fa-book w3-xxlarge"></i>
             <p>SPM CASA</p>
           </a>
-          <a href="spm-escola.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+          <a href="spm-escola.html" class="w3-bar-item w3-button w3-padding-large w3-gray">
             <i class="fa fa-book w3-xxlarge"></i>
             <p>SPM ESCOLA</p>
-          </a><a href="spm-p-casa.html" class="w3-bar-item w3-button w3-padding-large w3-gray">
+          </a><a href="spm-p-casa.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
             <i class="fa fa-book w3-xxlarge"></i>
             <p>SPM-p CASA</p>
           </a>
@@ -82,8 +82,8 @@
 
         <!-- Header/Home -->
     <header class="w3-container w3-padding-32 w3-center w3-light-gray" id="home">
-        <h1 class="w3-jumbo">SPM-p CASA</h1>
-        <p>SENSORY PROCESSING MEASURE PRÉ-ESCOLAR CASA</p>
+        <h1 class="w3-jumbo">SPM ESCOLA</h1>
+        <p>SENSORY PROCESSING MEASURE ESCOLA</p>
         <img src="static/images/logo_spm.jpg" alt="boy" class="w3-image" width="992" height="1108">
       </header>
   
@@ -96,7 +96,7 @@
                     <th>Ocasionalmente </th>
                     <th>Frequentemente </th>
                     <th>Sempre</th>
-                    <th>PARTICIPAÇÃO SOCIAL A criança ...</th>
+                    <th>PARTICIPAÇÃO SOCIAL Este aluno ...</th>
                 </tr>
                 <tr id="question_1">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_1" onclick="onlyOneCheckBox(this.className)"
@@ -107,7 +107,7 @@
                             onchange="onChange()" value="2">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_1" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">S</input></td>
-                    <td>1. Brinca com os amigos cooperativamente</td>
+                    <td>1. Trabalha em equipa; é prestável com os outros.</td>
                 </tr>
                 <tr id="question_2">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_2" onclick="onlyOneCheckBox(this.className)"
@@ -118,7 +118,7 @@
                             onchange="onChange()" value="2">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_2" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">S</input></td>
-                    <td>2. Partilha o que tem quando lhe é pedido</td>
+                    <td>2. Resolve conflitos com os colegas sem intervenção do professor.</td>
                 </tr>
                 <tr id="question_3">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_3" onclick="onlyOneCheckBox(this.className)"
@@ -129,7 +129,7 @@
                             onchange="onChange()" value="2">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_3" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">S</input></td>
-                    <td>3. Junta-se às bincadeiras dos outros sem interromper a sequência da respetiva atividade</td>
+                    <td>3. Lida com a frustração sem explodir ou demonstrar comportamentos agressivos.</td>
                 </tr>
                 <tr id="question_4">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_4" onclick="onlyOneCheckBox(this.className)"
@@ -140,7 +140,7 @@
                             onchange="onChange()" value="2">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_4" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">S</input></td>
-                    <td>4. Interage adequadamente com os que estão presentes na hora da refeição</td>
+                    <td>4. Brinca, de bom grado, com os colegas numa variedade de jogos e atividades.</td>
                 </tr>
                 <tr id="question_5">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_5" onclick="onlyOneCheckBox(this.className)"
@@ -151,8 +151,7 @@
                             onchange="onChange()" value="2">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_5" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">S</input></td>
-                    <td>5. Participa adequadamente nos passeios de família tais como jantar fora, ir a um parque ou a um
-                        museu</td>
+                    <td>5. Entra nas brincadeiras com os colegas sem interromper o decorrer da atividade.</td>
                 </tr>
                 <tr id="question_6">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_6" onclick="onlyOneCheckBox(this.className)"
@@ -163,8 +162,7 @@
                             onchange="onChange()" value="2">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_6" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">S</input></td>
-                    <td>6. Participa adequadamente nos ajuntamentos familiares tais como ir de férias, casamentos,
-                        aniversários</td>
+                    <td>6. Tem amigos e escolhe estar com eles quando é possível.</td>
                 </tr>
                 <tr id="question_7">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_7" onclick="onlyOneCheckBox(this.className)"
@@ -175,8 +173,7 @@
                             onchange="onChange()" value="2">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_7" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">S</input></td>
-                    <td>7. Participa adequadamente nas atividade com amigos tais como festas ou uso de equipamentos no
-                        parque</td>
+                    <td>7. Usa e percebe o humor quando brinca com os colegas.</td>
                 </tr>
                 <tr id="question_8">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_8" onclick="onlyOneCheckBox(this.className)"
@@ -187,9 +184,29 @@
                             onchange="onChange()" value="2">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_8" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">S</input></td>
-                    <td>8. Coopera durante as tarefas familiares tais como ir com os pais ao supermercado do shopping ou
-                        ir com os pais buscar o irmão(ã) à escola</td>
-                </tr>
+                    <td>8. Mantém “espaço pessoal” adequado (não fica demasiado perto dos outros durante uma conversa).</td>
+                </tr><tr id="question_9">
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_9" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="1">N</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_9" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="2">O</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_9" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="3">F</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_9" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="4">S</input></td>
+                        <td>9. Mantém contacto visual adequado durante uma conversa.</td>
+                    </tr>
+                    <tr id="question_10">
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_10" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="1">N</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_10" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="2">O</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_10" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="3">F</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_10" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="4">S</input></td>
+                        <td>10. Muda os temas de conversa de acordo com os interesses dos colegas; não fica fixo a um só tema.</td>
+                    </tr>
             </table>
 
 
@@ -214,31 +231,9 @@
                     <th>Ocasionalmente </th>
                     <th>Frequentemente </th>
                     <th>Sempre</th>
-                    <th>VISÃO A criança ...</th>
+                    <th>VISÃO Este aluno ...</th>
                 </tr>
-                <tr id="question_9">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_9" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_9" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_9" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_9" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>9. Fica aborrecida na presença de luzes especialmente luzes intensas
-                        (pisca os olhos ou quase que os fecha, chora, etc.)</td>
-                </tr>
-                <tr id="question_10">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_10" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_10" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_10" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_10" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>10. Tem dificuldade em encontrar um objeto pretendido no meio de tantos outros diferentes</td>
-                </tr>
+                
                 <tr id="question_11">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_11" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">N</input></td>
@@ -248,8 +243,7 @@
                             onchange="onChange()" value="3">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_11" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>11. Tem dificuldade em reconhecer se os objetos são semelhantes ou diferentes
-                        baseando-se nas cores, formas ou tamanhos</td>
+                    <td>11. Semicerra, tapa os olhos ou queixa-se da iluminação da sala de aula ou da luz solar intensa.</td>
                 </tr>
                 <tr id="question_12">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_12" onclick="onlyOneCheckBox(this.className)"
@@ -260,8 +254,7 @@
                             onchange="onChange()" value="3">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_12" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>12. Gosta de observar objetos que rodopiem ou que se movam
-                        mais do que a maioria das crianças da sua idade</td>
+                    <td>12. Mostra-se aflito/perturbado ao ver objetos em movimento.</td>
                 </tr>
                 <tr id="question_13">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_13" onclick="onlyOneCheckBox(this.className)"
@@ -272,7 +265,7 @@
                             onchange="onChange()" value="3">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_13" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>13. Caminha de encontro a pessoas e objetos como se não estivessem lá</td>
+                    <td>13. Distrai-se com estímulos visuais próximos (imagens, coisas nas paredes, janelas, outras crianças).</td>
                 </tr>
                 <tr id="question_14">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_14" onclick="onlyOneCheckBox(this.className)"
@@ -283,7 +276,8 @@
                             onchange="onChange()" value="3">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_14" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>14. Gosta de ligar e desligar repetidamente o interruptor da luz</td>
+                    <td>14. Enquanto são dadas instruções ou informações, o aluno olha à sua volta ou para os colegas, em vez de olhar para a
+                        pessoa que está a falar ou para o quadro.</td>
                 </tr>
                 <tr id="question_15">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_15" onclick="onlyOneCheckBox(this.className)"
@@ -294,7 +288,8 @@
                             onchange="onChange()" value="3">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_15" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>15. Gosta de olhar pelo canto do olho para objetos que se movam</td>
+                    <td>15. Enquanto são dadas instruções ou informações, o aluno olha à sua volta ou para os colegas, em vez de olhar para a
+                        pessoa que está a falar ou para o quadro.</td>
                 </tr>
                 <tr id="question_16">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_16" onclick="onlyOneCheckBox(this.className)"
@@ -305,7 +300,7 @@
                             onchange="onChange()" value="3">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_16" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>16. Tem dificuldade em prestar atenção se estiver num ambiente com muita informação visual</td>
+                    <td>16. Olha fixamente para pessoas ou objetos.</td>
                 </tr>
                 <tr id="question_17">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_17" onclick="onlyOneCheckBox(this.className)"
@@ -316,30 +311,7 @@
                             onchange="onChange()" value="3">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_17" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>17. Fica aborrecida num ambiente muito confuso (visualmente), tal como
-                        um quarto desarrumado ou uma loja com muitos objetos</td>
-                </tr>
-                <tr id="question_18">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_18" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_18" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_18" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_18" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>18. Distrai-se facilmente ao olhar para as coisas enquanto caminha</td>
-                </tr>
-                <tr id="question_19">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_19" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_19" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_19" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_19" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>19. Tem dificuldade em completar tarefas simples quando existem muitos objetos à sua volta</td>
+                    <td>17. Mostra-se aflito/perturbado quando as luzes são diminuídas para filmes e apresentações.</td>
                 </tr>
             </table>
 
@@ -366,7 +338,30 @@
                     <th>Ocasionalmente </th>
                     <th>Frequentemente </th>
                     <th>Sempre</th>
-                    <th>AUDIÇÃO A criança ...</th>
+                    <th>AUDIÇÃO Este aluno ...</th>
+                </tr>
+                <tr id="question_18">
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_18" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="1">N</input></td>
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_18" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="2">O</input></td>
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_18" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="3">F</input></td>
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_18" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="4">S</input></td>
+                    <td>18. Mostra-se aflito/perturbado com sons altos (bater da porta, aparelhos elétricos, campainha da escola, alarme de
+                        incêndio).</td>
+                </tr>
+                <tr id="question_19">
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_19" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="1">N</input></td>
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_19" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="2">O</input></td>
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_19" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="3">F</input></td>
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_19" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="4">S</input></td>
+                    <td>19. Mostra-se aflito/perturbado com sons de canções ou de instrumentos musicais.</td>
                 </tr>
                 <tr id="question_20">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_20" onclick="onlyOneCheckBox(this.className)"
@@ -377,8 +372,7 @@
                             onchange="onChange()" value="3">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_20" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>20. Fica aborrecida com sons típicos de casa tais como o aspirador, secador de cabelo ou
-                        autoclismo</td>
+                    <td>20. Não responde a vozes ou sons novos.</td>
                 </tr>
                 <tr id="question_21">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_21" onclick="onlyOneCheckBox(this.className)"
@@ -389,8 +383,7 @@
                             onchange="onChange()" value="3">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_21" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>21. Foge, chora, tapa os ouvidos com as mãos ou responde negativamente quando ouve sons muito
-                        altos</td>
+                    <td>21. Não responde a vozes ou sons novos</td>
                 </tr>
                 <tr id="question_22">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_22" onclick="onlyOneCheckBox(this.className)"
@@ -401,7 +394,7 @@
                             onchange="onChange()" value="3">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_22" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>22. Parece não ouvir certos sons</td>
+                    <td>22. Faz barulhos, murmura, canta, ou grita durante momentos silenciosos da aula.</td>
                 </tr>
                 <tr id="question_23">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_23" onclick="onlyOneCheckBox(this.className)"
@@ -412,8 +405,7 @@
                             onchange="onChange()" value="3">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_23" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>23. Parece perturbado por ou intensamente interessado em sons que não são usualmente notados
-                        pelas outras pessoas</td>
+                    <td>23. Fala muito alto ou faz excessivo barulho durante as transições (quando muda de atividade ou de espaço).</td>
                 </tr>
                 <tr id="question_24">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_24" onclick="onlyOneCheckBox(this.className)"
@@ -424,54 +416,7 @@
                             onchange="onChange()" value="3">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_24" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>24. Distrai-se facilmente com barulhos de fundo tais como o cortador de relva no exterior,
-                        o ar condicionado, o frigorífico ou lâmpadas fluorescentes</td>
-                </tr>
-                <tr id="question_25">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_25" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_25" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_25" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_25" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>25. Gosta de produzir certos sons repetidamente como por exemplo puxar o autoclismo várias vezes
-                        seguidas</td>
-                </tr>
-                <tr id="question_26">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_26" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_26" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_26" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_26" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>26. Fica angustiada com sons estridentes ou metálicos tais como apitos, assobios, flautas e
-                        trompetes</td>
-                </tr>
-                <tr id="question_27">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_27" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_27" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_27" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_27" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>27. Fica stressada em ambientes ativos tais como festas ou salas com muita gente</td>
-                </tr>
-                <tr id="question_28">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_28" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_28" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_28" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_28" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>28. Assusta-se facilmente quando ouve sons muito altos ou inesperados</td>
+                    <td>24. Fala muito alto ou faz excessivo barulho durante as transições (quando muda de atividade ou de espaço).</td>
                 </tr>
 
             </table>
@@ -499,7 +444,52 @@
                     <th>Ocasionalmente </th>
                     <th>Frequentemente </th>
                     <th>Sempre</th>
-                    <th>TOQUE A criança ...</th>
+                    <th>TOQUE Este aluno ...</th>
+                </tr>
+                <tr id="question_25">
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_25" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="1">N</input></td>
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_25" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="2">O</input></td>
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_25" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="3">F</input></td>
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_25" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="4">S</input></td>
+                    <td>25. Mostra-se aflito/perturbado quando as mãos ou a cara estão sujas (com cola, digitintas, comida, sujidade, etc).</td>
+                </tr>
+                <tr id="question_26">
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_26" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="1">N</input></td>
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_26" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="2">O</input></td>
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_26" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="3">F</input></td>
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_26" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="4">S</input></td>
+                    <td>26. Não tolera sujidade nas mãos ou roupa, mesmo que por pouco tempo.</td>
+                </tr>
+                <tr id="question_27">
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_27" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="1">N</input></td>
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_27" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="2">O</input></td>
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_27" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="3">F</input></td>
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_27" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="4">S</input></td>
+                    <td>27. Mostra-se aflito/perturbado quando toca em certas texturas (materiais da sala de aula, utensílios, equipamentos
+                        desportivos, etc).</td>
+                </tr>
+                <tr id="question_28">
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_28" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="1">N</input></td>
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_28" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="2">O</input></td>
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_28" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="3">F</input></td>
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_28" onclick="onlyOneCheckBox(this.className)"
+                            onchange="onChange()" value="4">S</input></td>
+                    <td>28. Fica aflito/perturbado quando é tocado acidentalmente pelos colegas (pode ter uma resposta agressiva ou afastarse).</td>
                 </tr>
                 <tr id="question_29">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_29" onclick="onlyOneCheckBox(this.className)"
@@ -510,7 +500,7 @@
                             onchange="onChange()" value="3">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_29" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>29. Afasta-se de ser tocado suavemente</td>
+                    <td>29. Não responde ao toque dos outros.</td>
                 </tr>
                 <tr id="question_30">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_30" onclick="onlyOneCheckBox(this.className)"
@@ -521,7 +511,7 @@
                             onchange="onChange()" value="3">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_30" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>30. Prefere ser ela a tocar em vez de ser tocada por outros</td>
+                    <td>30. Procura temperaturas quentes ou frias tocando em janelas, outras superfícies.</td>
                 </tr>
                 <tr id="question_31">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_31" onclick="onlyOneCheckBox(this.className)"
@@ -532,7 +522,7 @@
                             onchange="onChange()" value="3">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_31" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>31. Fica angustiada quando tem que cortar as unhas</td>
+                    <td>31. Procura temperaturas quentes ou frias tocando em janelas, outras superfícies.</td>
                 </tr>
                 <tr id="question_32">
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_32" onclick="onlyOneCheckBox(this.className)"
@@ -543,121 +533,9 @@
                             onchange="onChange()" value="3">F</input></td>
                     <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_32" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>32. Fica aborrecida quando alguém toca na sua cara</td>
+                    <td>32. Não limpa a saliva ou a comida da cara.</td>
                 </tr>
-                <tr id="question_33">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_33" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_33" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_33" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_33" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>33. Evita tocar ou brincar com digitintas, pastas de modelar, areia, barro, lama, cola ou outros
-                        materiais moles</td>
-                </tr>
-                <tr id="question_34">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_34" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_34" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_34" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_34" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>34. Tem uma grande tolerância à dor</td>
-                </tr>
-                <tr id="question_35">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_35" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_35" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_35" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_35" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>35. Não gosta de lavar os dentes quando comparada com as demais crianças da sua idade</td>
-                </tr>
-                <tr id="question_36">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_36" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_36" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_36" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_36" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>36. Aprecia sensações que podem ser dolorosas para as demais crianças tais como atirar-se
-                        para o chão ou bater no seu próprio corpo</td>
-                </tr>
-                <tr id="question_37">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_37" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_37" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_37" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_37" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>37. Não gosta que lavem, penteiem ou arranjem o seu cabelo</td>
-                </tr>
-                <tr id="question_38">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_38" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_38" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_38" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_38" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>38. Não gosta de cortar o cabelo</td>
-                </tr>
-                <tr id="question_39">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_39" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_39" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_39" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_39" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>39. Evita comidas com certas texturas</td>
-                </tr>
-                <tr id="question_40">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_40" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_40" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_40" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_40" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>40. Engasga-se ou vomitas perante comidas com certas texturas</td>
-                </tr>
-                <tr id="question_41">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_41" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_41" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_41" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_41" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>41. Não gosta de lavar nem de limpar a cara</td>
-                </tr>
-                <tr id="question_42">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_42" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_42" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_42" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_42" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>42. Baba-se mais do que a maioria das crianças da sua idade</td>
-                </tr>
-
+               
             </table>
 
 
@@ -683,53 +561,51 @@
                     <th>Ocasionalmente </th>
                     <th>Frequentemente </th>
                     <th>Sempre</th>
-                    <th>GOSTO E OLFACTO A criança ...</th>
-                </tr>
-                <tr id="question_43">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_43" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_43" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_43" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_43" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>43. Gosta de levar à boca objetos não comestíveis tais como cola ou tintas</td>
-                </tr>
-                <tr id="question_44">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_44" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_44" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_44" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_44" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>44. Parece não dar conta ou ignorar odores fortes</td>
-                </tr>
-                <tr id="question_45">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_45" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_45" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_45" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_45" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>45. Prefere tanto certos sabores de comida ao ponto de recusara refeição oferecida</td>
-                </tr>
-                <tr id="question_46">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_46" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_46" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_46" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_46" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>46. Recusa-se a usar a pasta dos dentes</td>
-                </tr>
-
+                    <th>PALADAR E OLFACTO Este aluno ...</th>
+                </tr> <tr id="question_33">
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_33" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="1">N</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_33" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="2">O</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_33" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="3">F</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_33" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="4">S</input></td>
+                        <td>33. Mostra-se aflito/perturbado com sabores ou cheiros de diferentes comidas.</td>
+                    </tr>
+                    <tr id="question_34">
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_34" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="1">N</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_34" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="2">O</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_34" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="3">F</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_34" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="4">S</input></td>
+                        <td>34. Não se apercebe de cheiros fortes ou invulgares (cola, tinta, marcadores, etc).</td>
+                    </tr>
+                    <tr id="question_35">
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_35" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="1">N</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_35" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="2">O</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_35" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="3">F</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_35" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="4">S</input></td>
+                        <td>35. Não consegue distinguir odores; não prefere bons cheiros a maus cheiros.</td>
+                    </tr>
+                    <tr id="question_36">
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_36" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="1">N</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_36" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="2">O</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_36" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="3">F</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_36" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="4">S</input></td>
+                        <td>36. Tenta provar ou lamber objetos ou pessoas.</td>
+                    </tr>
             </table>
 
 
@@ -751,112 +627,86 @@
                     <th>Ocasionalmente </th>
                     <th>Frequentemente </th>
                     <th>Sempre</th>
-                    <th>CONSCIÊNCIA CORPORAL A criança ...</th>
+                    <th>CONSCIÊNCIA DO CORPO Este aluno ...</th>
                 </tr>
-                <tr id="question_47">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_47" onclick="onlyOneCheckBox(this.className)"
+                <tr id="question_37">
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_37" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_47" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_37" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_47" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_37" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_47" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_37" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>47. Agarra nos objetos (lápis ou colher da sopa) com tanta força que se torna difícil usar o
-                        objeto</td>
+                    <td>37. Entorna os conteúdos quando abre recipientes.</td>
                 </tr>
-                <tr id="question_48">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_48" onclick="onlyOneCheckBox(this.className)"
+                <tr id="question_38">
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_38" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_48" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_38" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_48" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_38" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_48" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_38" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>48. Tem o impulso de procurar atividades tais como puxar, empurrar, arrastar, levantar e saltar
-                    </td>
+                    <td>38. Mastiga ou leva à boca roupa, lápis, lápis de cera, ou materiais escolares.</td>
                 </tr>
-                <tr id="question_49">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_49" onclick="onlyOneCheckBox(this.className)"
+                <tr id="question_39">
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_39" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_49" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_39" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_49" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_39" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_49" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_39" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>49. Tem dificuldade em calcular os movimentos do corpo precisos para se sentar corretamente
-                        numa cadeira ou avançar um obstáculo sem esbarrar no mesmo</td>
+                    <td>39. Move a cadeira bruscamente (empurra a cadeira para debaixo da mesa ou puxa a cadeira com muita força).</td>
                 </tr>
-                <tr id="question_50">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_50" onclick="onlyOneCheckBox(this.className)"
+                <tr id="question_40">
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_40" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_50" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_40" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_50" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_40" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_50" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_40" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>50. Agarra nos objetos (lápis ou colher da sopa) de forma tão suave que se torna difícil usar o
-                        objeto</td>
+                    <td>40. Corre, saltita, ou pula em vez de andar.</td>
                 </tr>
-                <tr id="question_51">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_51" onclick="onlyOneCheckBox(this.className)"
+                <tr id="question_41">
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_41" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_51" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_41" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_51" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_41" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_51" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_41" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>51. Parece exercer demasiada pressão nas tarefas (ex: bate com os pés no chão ao caminhar,
-                        bate com as portas ou exerce demasiada força ao usar o lápis)</td>
+                    <td>41. Anda com “pés pesados” ou bate com os pés no chão quando anda.</td>
                 </tr>
-                <tr id="question_52">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_52" onclick="onlyOneCheckBox(this.className)"
+                <tr id="question_42">
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_42" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_52" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_42" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_52" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_42" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_52" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_42" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>52. Salta muito</td>
+                    <td>42. Salta ou anda com “pés pesados” quando sobe ou desce escadas.</td>
                 </tr>
-                <tr id="question_53">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_53" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_53" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_53" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_53" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>53. Tem tendência a fazer festas aos animais com demasiada força</td>
-                </tr>
-                <tr id="question_54">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_54" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_54" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_54" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_54" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>54. Empurra ou puxa as outras crianças com frequência</td>
-                </tr>
-                <tr id="question_55">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_55" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_55" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_55" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_55" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>55. Morde objetos ou até mesmo a roupa com maior frequência do que as crianças da sua idade</td>
-                </tr>
+
+            <tr id="question_43">
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_43" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="1">N</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_43" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="2">O</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_43" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="3">F</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_43" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="4">S</input></td>
+                <td>43. Bate as portas ou abre-as com demasiada força.</td>
+            </tr>
             </table>
 
 
@@ -878,133 +728,108 @@
                     <th>Ocasionalmente </th>
                     <th>Frequentemente </th>
                     <th>Sempre</th>
-                    <th>MOVIMENTO E EQUILÍBRIO A criança ...</th>
+                    <th>MOVIMENTO E EQUILÍBRIO Este aluno ...</th>
                 </tr>
-                <tr id="question_56">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_56" onclick="onlyOneCheckBox(this.className)"
+                <tr id="question_44">
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_44" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_56" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_44" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_56" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_44" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_56" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_44" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>56. Mostra um medo excessivo do movimento em atividades como subir e descer escadas,
-                        andar de baloiço, escorregão ou outras atividades</td>
+                    <td>44. Passa as mãos ao longo da parede quando anda.</td>
                 </tr>
-                <tr id="question_57">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_57" onclick="onlyOneCheckBox(this.className)"
+                <tr id="question_45">
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_45" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_57" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_45" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_57" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_45" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_57" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_45" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td class="checkbox-center" >57. Evita atividades que exijam equilíbrio, como por exemplo, caminhar nas bermas dos passeios
-                        ou pavimentos irregulares ou desnivelados</td>
+                    <td>45. Enrola as pernas à volta das pernas da cadeira.</td>
                 </tr>
-                <tr id="question_58">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_58" onclick="onlyOneCheckBox(this.className)"
+                <tr id="question_46">
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_46" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_58" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_46" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_58" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_46" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_58" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_46" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>58. Deixa-se escorregar pela cadeira quando está sentado (tem dificuldade em manter o tronco
-                        ereto)</td>
+                    <td>46. Baloiça na cadeira quando sentado à secretária ou mesa.</td>
                 </tr>
-                <tr id="question_59">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_59" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_59" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_59" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_59" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>59. Tem dificuldade em proteger-se da queda (é tardia em usar as reações de proteção)</td>
-                </tr>
-                <tr id="question_60">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_60" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_60" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_60" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_60" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>60. Parece não ficar tonta com o movimento enquanto as outras crianças geralmente ficam</td>
-                </tr>
-                <tr id="question_61">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_61" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_61" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_61" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_61" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>61. Rodopia ou gira sobre si própria mais do que as outras crianças</td>
-                </tr>
-                <tr id="question_62">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_62" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_62" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_62" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_62" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>62. Fica perturbada quando inclina a cabeça</td>
-                </tr>
-                <tr id="question_63">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_63" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_63" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_63" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_63" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>63. Revela pobre coordenação e parece ser trapalhona</td>
-                </tr>
-                <tr id="question_64">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_64" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_64" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_64" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_64" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>64. Encosta-se nas pessoas ou na mobília como suporte de apoio enquanto está sentada
-                        ou quando se tenta levantar do chão</td>
-                </tr>
-                <tr id="question_65">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_65" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_65" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_65" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_65" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>65. Balanceia o corpo enquanto está sentada</td>
-                </tr>
-                <tr id="question_66">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_66" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_66" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_66" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_66" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>66. Balanceia o corpo enquanto está sentada</td>
-                </tr>
+    
+                    <tr id="question_47">
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_47" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="1">N</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_47" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="2">O</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_47" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="3">F</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_47" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="4">S</input></td>
+                        <td>47. Fica irrequieto quando está sentado à secretária ou mesa.</td>
+                    </tr>
+                    <tr id="question_48">
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_48" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="1">N</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_48" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="2">O</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_48" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="3">F</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_48" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="4">S</input></td>
+                        <td>48. Cai da cadeira quando está sentado à secretária ou mesa.</td>
+                    </tr>
+                    <tr id="question_49">
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_49" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="1">N</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_49" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="2">O</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_49" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="3">F</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_49" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="4">S</input></td>
+                        <td>49. Encosta-se nas paredes, móveis, ou em outras pessoas para se apoiar quando está de pé.</td>
+                    </tr>
+                    <tr id="question_50">
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_50" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="1">N</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_50" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="2">O</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_50" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="3">F</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_50" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="4">S</input></td>
+                        <td>50. Quando está sentado no chão, não consegue manter-se sem apoio.</td>
+                    </tr>
+                    <tr id="question_51">
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_51" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="1">N</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_51" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="2">O</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_51" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="3">F</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_51" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="4">S</input></td>
+                        <td>51. Escorrega, deita-se na secretária, ou segura a cabeça com as mãos quando sentado à secretária.</td>
+                    </tr>
+                    <tr id="question_52">
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_52" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="1">N</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_52" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="2">O</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_52" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="3">F</input></td>
+                        <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_52" onclick="onlyOneCheckBox(this.className)"
+                                onchange="onChange()" value="4">S</input></td>
+                        <td>52.Tem pouca coordenação; parece desajeitado.</td>
+                    </tr>
             </table>
 
 
@@ -1026,111 +851,120 @@
                     <th>Ocasionalmente </th>
                     <th>Frequentemente </th>
                     <th>Sempre</th>
-                    <th>PLANEAMENTO MOTOR E IDEAÇÃO A criança ...</th>
+                    <th>PLANEAMENTO MOTOR E IDEAÇÃO Este aluno ...</th>
                 </tr>
-                <tr id="question_67">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_67" onclick="onlyOneCheckBox(this.className)"
+                <tr id="question_53">
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_53" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_67" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_53" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_67" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_53" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_67" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_53" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>67. Tem dificuldade em descobrir como manipular múltiplos objetos</td>
+                    <td>53. Não desempenha as tarefas diárias de forma consistente; a qualidade do trabalho varia consideravelmente.</td>
                 </tr>
-                <tr id="question_68">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_68" onclick="onlyOneCheckBox(this.className)"
+                <tr id="question_54">
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_54" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_68" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_54" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_68" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_54" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_68" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_54" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>68. Fica confusa quando tem que arrumar os materiais nos seus devidos lugares</td>
+                    <td>54. É incapaz de resolver problemas eficazmente.</td>
                 </tr>
-                <tr id="question_69">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_69" onclick="onlyOneCheckBox(this.className)"
+                <tr id="question_55">
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_55" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_69" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_55" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_69" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_55" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_69" onclick="onlyOneCheckBox(this.className)"
+                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_55" onclick="onlyOneCheckBox(this.className)"
                             onchange="onChange()" value="4">S</input></td>
-                    <td>69. Tem dificuldade em seguir a sequência das atividades da vida diárias tal como vestir-se
-                        ou tomar banho (ex.: para se vestir, primeiro pega nas cuecas, depois nas meias, depois nas
-                        calças, etc.)</td>
+                    <td>55. É incapaz de resolver problemas eficazmente.</td>
                 </tr>
-                <tr id="question_70">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_70" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_70" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_70" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_70" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>70. Tem dificuldade em completar tarefas com vários passos</td>
-                </tr>
-                <tr id="question_71">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_71" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_71" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_71" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_71" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>71. Tem dificuldade em imitar corretamente ações que foram demonstradas previamente
-                        (ex: jogos com movimento, canções com gestos)</td>
-                </tr>
-                <tr id="question_72">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_72" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_72" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_72" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_72" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>72. Tem dificuldade em copiar uma construção feita por um colega ou pelo adulto</td>
-                </tr>
-                <tr id="question_73">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_73" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_73" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_73" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_73" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>73. Tem dificuldade em introduzir novas ideias durante as suas brincadeiras</td>
-                </tr>
-                <tr id="question_74">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_74" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_74" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_74" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_74" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>74. Tem tendência a brincar repetidamente com as mesmas atividades e não gosta de mudar
-                        para atividades novas quando surge essa oportunidade</td>
-                </tr>
-                <tr id="question_75">
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_75" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="1">N</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_75" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="2">O</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_75" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="3">F</input></td>
-                    <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_75" onclick="onlyOneCheckBox(this.className)"
-                            onchange="onChange()" value="4">S</input></td>
-                    <td>75. Tem dificuldade em entrar e sair do triciclo</td>
-                </tr>
+            <tr id="question_56">
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_56" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="1">N</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_56" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="2">O</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_56" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="3">F</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_56" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="4">S</input></td>
+                <td>56. Não desempenha as tarefas numa sequência adequada.</td>
+            </tr>
+            <tr id="question_57">
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_57" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="1">N</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_57" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="2">O</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_57" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="3">F</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_57" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="4">S</input></td>
+                <td>57. Não desempenha as tarefas numa sequência adequada.</td>
+            </tr>
+            <tr id="question_58">
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_58" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="1">N</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_58" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="2">O</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_58" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="3">F</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_58" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="4">S</input></td>
+                <td>58. Tem dificuldade em imitar corretamente demonstrações (jogos de movimento, canções com movimentos).</td>
+            </tr>
+            <tr id="question_59">
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_59" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="1">N</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_59" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="2">O</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_59" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="3">F</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_59" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="4">S</input></td>
+                <td>59. Tem dificuldade em completar tarefas segundo um modelo apresentado.</td>
+            </tr>
+            <tr id="question_60">
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_60" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="1">N</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_60" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="2">O</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_60" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="3">F</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_60" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="4">S</input></td>
+                <td>60. Demonstra pouca imaginação e criatividade no brincar e nos tempos livres (tal como ser incapaz de criar jogos
+                        novos).</td>
+            </tr>
+            <tr id="question_61">
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_61" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="1">N</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_61" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="2">O</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_61" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="3">F</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_61" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="4">S</input></td>
+                <td>61. Brinca repetitivamente durante os tempos livres; não desenvolve nem altera a atividade quando lhe é dada a
+                        oportunidade.</td>
+            </tr>
+            <tr id="question_62">
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_62" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="1">N</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_62" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="2">O</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_62" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="3">F</input></td>
+                <td class="checkbox-center" ><input type="checkbox" class="checkbox_question_62" onclick="onlyOneCheckBox(this.className)"
+                        onchange="onChange()" value="4">S</input></td>
+                <td>62. Mostra pouca organização dos materiais dentro, em cima e na área à volta da secretária.</td>
+            </tr>
 
             </table>
 
