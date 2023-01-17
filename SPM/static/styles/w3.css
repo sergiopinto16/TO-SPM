@@ -515,7 +515,7 @@ a {
 .w3-sidebar {
     height: 100%;
     width: 200px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     position: fixed !important;
     z-index: 1;
     overflow: auto
@@ -582,7 +582,7 @@ a {
     width: auto;
     border: none;
     display: block;
-    outline: 0
+    outline: 0;
 }
 
 .w3-bar .w3-dropdown-hover,
