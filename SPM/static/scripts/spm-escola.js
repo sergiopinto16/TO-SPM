@@ -78,83 +78,123 @@ function calc_participacao_social() {
     tscore_group = 0;
 
     if (res_group != 0) {
-        if (res_group == 8 || res_group == 9) {
+        if (res_group == 10) {
             score_group = 16;
             tscore_group = 40;
         }
-        else if (res_group == 10) {
+        else if (res_group == 11) {
+            score_group = 18;
+            tscore_group = 41;
+        }
+        else if (res_group == 12) {
             score_group = 27;
             tscore_group = 44;
         }
-        else if (res_group == 11) {
+        else if (res_group == 13) {
+            score_group = 31;
+            tscore_group = 45;
+        }
+        else if (res_group == 14) {
             score_group = 38;
             tscore_group = 47;
         }
-        else if (res_group == 12) {
+        else if (res_group == 15) {
+            score_group = 46;
+            tscore_group = 49;
+        }
+        else if (res_group == 16) {
             score_group = 50;
             tscore_group = 50;
         }
-        else if (res_group == 13) {
+        else if (res_group == 17) {
             score_group = 58;
             tscore_group = 52;
         }
-        else if (res_group == 14) {
+        else if (res_group == 18) {
+            score_group = 62;
+            tscore_group = 53;
+        }
+        else if (res_group == 19) {
             score_group = 66;
             tscore_group = 54;
         }
-        else if (res_group == 15) {
+        else if (res_group == 20) {
             score_group = 73;
             tscore_group = 56;
         }
-        else if (res_group == 16) {
+        else if (res_group == 21) {
+            score_group = 76;
+            tscore_group = 57;
+        }
+        else if (res_group == 22) {
             score_group = 82;
             tscore_group = 59;
         }
-        else if (res_group == 17) {
+        else if (res_group == 23) {
+            score_group = 84;
+            tscore_group = 60;
+        }
+        else if (res_group == 24) {
+            score_group = 86;
+            tscore_group = 61;
+        }
+        else if (res_group == 25) {
+            score_group = 88;
+            tscore_group = 62;
+        }
+        else if (res_group == 26) {
             score_group = 90;
             tscore_group = 63;
         }
-        else if (res_group == 18) {
+        else if (res_group == 27) {
+            score_group = 92;
+            tscore_group = 64;
+        }
+        else if (res_group == 28) {
+            score_group = 93;
+            tscore_group = 65;
+        }
+        else if (res_group == 29) {
             score_group = 95;
             tscore_group = 66;
         }
-        else if (res_group == 19) {
-            score_group = 95;
-            tscore_group = 67;
-        }
-        else if (res_group == 20) {
+        else if (res_group == 30) {
             score_group = 96;
             tscore_group = 68;
         }
-        else if (res_group == 21) {
+        else if (res_group == 31) {
             score_group = 97;
             tscore_group = 69;
         }
-        else if (res_group == 22) {
+        else if (res_group == 32) {
             score_group = 97;
             tscore_group = 70;
         }
-        else if (res_group == 23) {
+        else if (res_group == 33) {
             score_group = 98;
-            tscore_group = 71;
+            tscore_group = 72;
         }
-        else if (res_group == 24) {
+        else if (res_group == 34) {
             score_group = 99;
             tscore_group = 73;
         }
-        else if (res_group == 25) {
+        else if (res_group == 35) {
             score_group = 99;
-            tscore_group = 75;
+            tscore_group = 74;
         }
-        else if (res_group == 26) {
+        else if (res_group == 36) {
             score_group = 99;
             tscore_group = 76;
         }
-        else if (res_group == 27) {
+        else if (res_group == 37) {
             score_group = 99;
-            tscore_group = 79;
+            tscore_group = 77;
         }
-        else if (res_group >= 28) {
+        else if (res_group == 38) {
+            score_group = 99;
+            tscore_group = 78;
+        }
+        else if (res_group >= 38) {
             score_group = 99;
             tscore_group = 80;
         }
@@ -222,106 +262,87 @@ function calc_visao() {
     tscore_group = 0;
 
     if (res_group != 0) {
-        if (res_group == 11) {
+        if (res_group == 7) {
             score_group = 16;
             tscore_group = 40;
         }
-        else if (res_group == 12) {
-            score_group = 24;
-            tscore_group = 43;
+        else if (res_group == 8) {
+            score_group = 42;
+            tscore_group = 48;
         }
-        else if (res_group == 13) {
-            score_group = 38;
-            tscore_group = 47;
-        }
-        else if (res_group == 14) {
-            score_group = 50;
-            tscore_group = 50;
-        }
-        else if (res_group == 15) {
+        else if (res_group == 9) {
             score_group = 62;
             tscore_group = 53;
         }
-        else if (res_group == 16) {
-            score_group = 73;
-            tscore_group = 56;
+        else if (res_group == 10) {
+            score_group = 76;
+            tscore_group = 57;
         }
-        else if (res_group == 17) {
-            score_group = 79;
-            tscore_group = 58;
+        else if (res_group == 11) {
+            score_group = 82;
+            tscore_group = 59;
         }
-        else if (res_group == 18) {
-            score_group = 84;
-            tscore_group = 60;
-        }
-        else if (res_group == 19) {
+        else if (res_group == 12) {
             score_group = 88;
             tscore_group = 62;
         }
-        else if (res_group == 20) {
+        else if (res_group == 13) {
             score_group = 92;
             tscore_group = 64;
         }
-        else if (res_group == 21) {
-            score_group = 95;
-            tscore_group = 66;
+        else if (res_group == 14) {
+            score_group = 93;
+            tscore_group = 65;
         }
-        else if (res_group == 22) {
+        else if (res_group == 15) {
             score_group = 95;
             tscore_group = 67;
         }
-        else if (res_group == 23) {
-            score_group = 97;
-            tscore_group = 69;
-        }
-        else if (res_group == 24) {
+        else if (res_group == 16) {
             score_group = 97;
             tscore_group = 70;
         }
-        else if (res_group == 25) {
-            score_group = 98;
-            tscore_group = 71;
-        }
-        else if (res_group == 26) {
+        else if (res_group == 17) {
             score_group = 98;
             tscore_group = 72;
         }
-        else if (res_group == 27) {
-            score_group = 99;
-            tscore_group = 72;
-        }
-        else if (res_group == 28) {
+        else if (res_group == 18) {
             score_group = 99;
             tscore_group = 73;
         }
-        else if (res_group == 29) {
-            score_group = 99;
-            tscore_group = 74;
-        }
-        else if (res_group == 30) {
+        else if (res_group == 19) {
             score_group = 99;
             tscore_group = 75;
         }
-        else if (res_group == 31) {
-            score_group = 99;
-            tscore_group = 75;
-        }
-        else if (res_group >= 32 && res_group <= 34) {
+        else if (res_group == 20) {
             score_group = 99;
             tscore_group = 76;
         }
-        else if (res_group >= 35 && res_group <= 36) {
+        else if (res_group == 21) {
+            score_group = 99;
+            tscore_group = 76;
+        }
+        else if (res_group == 22) {
             score_group = 99;
             tscore_group = 77;
         }
-        else if (res_group == 37) {
+        else if (res_group == 23) {
+            score_group = 99;
+            tscore_group = 77;
+        }
+        else if (res_group == 24) {
+            score_group = 99;
+            tscore_group = 78;
+        }
+        else if (res_group == 25) {
             score_group = 99;
             tscore_group = 79;
         }
-        else if (res_group >= 38) {
+        else if (res_group >= 26) {
             score_group = 99;
             tscore_group = 80;
         }
+        
     }
 
 
@@ -383,94 +404,79 @@ function calc_audicao() {
 
 
     if (res_group != 0) {
-        if (res_group == 9) {
-            score_group = 16;
-            tscore_group = 40;
+        if (res_group == 7) {
+            score_group = 24;
+            tscore_group = 43;
         }
-        else if (res_group == 10) {
-            score_group = 38;
-            tscore_group = 47;
-        }
-        else if (res_group == 11) {
+        else if (res_group == 8) {
             score_group = 58;
             tscore_group = 52;
         }
+        else if (res_group == 9) {
+            score_group = 73;
+            tscore_group = 56;
+        }
+        else if (res_group == 10) {
+            score_group = 82;
+            tscore_group = 59;
+        }
+        else if (res_group == 11) {
+            score_group = 86;
+            tscore_group = 61;
+        }
         else if (res_group == 12) {
-            score_group = 69;
-            tscore_group = 55;
-        }
-        else if (res_group == 13) {
-            score_group = 79;
-            tscore_group = 58;
-        }
-        else if (res_group == 14) {
-            score_group = 84;
-            tscore_group = 60;
-        }
-        else if (res_group == 15) {
             score_group = 90;
             tscore_group = 63;
         }
-        else if (res_group == 16) {
-            score_group = 92;
-            tscore_group = 64;
+        else if (res_group == 13) {
+            score_group = 93;
+            tscore_group = 65;
         }
-        else if (res_group == 17) {
-            score_group = 95;
-            tscore_group = 66;
-        }
-        else if (res_group == 18) {
+        else if (res_group == 14) {
             score_group = 95;
             tscore_group = 67;
         }
-        else if (res_group == 19) {
+        else if (res_group == 15) {
             score_group = 97;
             tscore_group = 69;
         }
-        else if (res_group == 20) {
-            score_group = 97;
-            tscore_group = 70;
-        }
-        else if (res_group == 21) {
+        else if (res_group == 16) {
             score_group = 98;
-            tscore_group = 71;
-        }
-        else if (res_group == 22) {
-            score_group = 99;
             tscore_group = 72;
         }
-        else if (res_group == 23) {
+        else if (res_group == 17) {
             score_group = 99;
-            tscore_group = 72;
+            tscore_group = 74;
         }
-        else if (res_group == 24) {
-            score_group = 99;
-            tscore_group = 73;
-        }
-        else if (res_group == 25) {
+        else if (res_group == 18) {
             score_group = 99;
             tscore_group = 75;
         }
-        else if (res_group == 26) {
+        else if (res_group == 19) {
             score_group = 99;
             tscore_group = 76;
         }
-        else if (res_group == 27) {
+        else if (res_group == 20) {
+            score_group = 99;
+            tscore_group = 76;
+        }
+        else if (res_group == 21) {
             score_group = 99;
             tscore_group = 77;
         }
-        else if (res_group == 28) {
+        else if (res_group == 22) {
             score_group = 99;
             tscore_group = 78;
         }
-        else if (res_group == 29) {
+        else if (res_group == 23) {
             score_group = 99;
-            tscore_group = 79;
+            tscore_group = 78;
         }
-        else if (res_group >= 30) {
+        else if (res_group >= 24) {
             score_group = 99;
             tscore_group = 80;
         }
+        
     }
 
 
@@ -536,95 +542,75 @@ function calc_toque() {
 
 
     if (res_group != 0) {
-        if (res_group == 14) {
-            score_group = 16;
-            tscore_group = 40;
+        if (res_group == 8) {
+            score_group = 27;
+            tscore_group = 44;
         }
-        else if (res_group == 15) {
-            score_group = 24;
-            tscore_group = 43;
-        }
-        else if (res_group == 16) {
-            score_group = 34;
-            tscore_group = 46;
-        }
-        else if (res_group == 17) {
-            score_group = 46;
-            tscore_group = 49;
-        }
-        else if (res_group == 18) {
+        else  if (res_group == 9) {
             score_group = 62;
             tscore_group = 53;
         }
-        else if (res_group == 19) {
-            score_group = 69;
-            tscore_group = 55;
-        }
-        else if (res_group == 20) {
+        else  if (res_group == 10) {
             score_group = 79;
             tscore_group = 58;
         }
-        else if (res_group == 21) {
-            score_group = 84;
-            tscore_group = 60;
+        else  if (res_group == 11) {
+            score_group = 86;
+            tscore_group = 61;
         }
-        else if (res_group == 22) {
-            score_group = 88;
-            tscore_group = 62;
-        }
-        else if (res_group == 23) {
+        else  if (res_group == 12) {
             score_group = 90;
             tscore_group = 63;
         }
-        else if (res_group == 24) {
-            score_group = 92;
-            tscore_group = 64;
-        }
-        else if (res_group == 25) {
+        else  if (res_group == 13) {
             score_group = 93;
             tscore_group = 65;
         }
-        else if (res_group == 26) {
-            score_group = 95;
-            tscore_group = 66;
-        }
-        else if (res_group == 27) {
+        else  if (res_group == 14) {
             score_group = 95;
             tscore_group = 67;
         }
-        else if (res_group == 28) {
+        else if (res_group == 15) {
             score_group = 96;
             tscore_group = 68;
         }
-        else if (res_group == 29) {
-            score_group = 97;
-            tscore_group = 69;
-        }
-        else if (res_group == 30) {
+        else if (res_group == 16) {
             score_group = 97;
             tscore_group = 70;
         }
-        else if (res_group == 31) {
-            score_group = 98;
-            tscore_group = 71;
-        }
-        else if (res_group == 32) {
+        else if (res_group == 17) {
             score_group = 98;
             tscore_group = 72;
         }
-        else if (res_group == 33) {
+        else if (res_group == 18) {
             score_group = 99;
-            tscore_group = 74;
+            tscore_group = 73;
         }
-        else if (res_group == 34) {
+        else if (res_group == 19) {
+            score_group = 99;
+            tscore_group = 75;
+        }
+        else if (res_group == 20) {
             score_group = 99;
             tscore_group = 76;
         }
-        else if (res_group == 35) {
+        else if (res_group == 21) {
             score_group = 99;
-            tscore_group = 77;
+            tscore_group = 78;
         }
-        else if (res_group >= 36) {
+        else if (res_group == 22) {
+            score_group = 99;
+            tscore_group = 78;
+        }
+        else if (res_group == 23) {
+            score_group = 99;
+            tscore_group = 79;
+        }
+        else if (res_group == 24) {
+            score_group = 99;
+            tscore_group = 79;
+        }
+        else if (res_group >= 25) {
             score_group = 99;
             tscore_group = 80;
         }
@@ -755,82 +741,83 @@ function calc_consciencia_corporal() {
     tscore_group = 0;
 
     if (res_group != 0) {
-        if (res_group == 9) {
-            score_group = 16;
-            tscore_group = 40;
+        if (res_group == 7) {
+            score_group = 21;
+            tscore_group = 42;
         }
-        else if (res_group == 10) {
-            score_group = 34;
-            tscore_group = 46;
+        else if (res_group == 8) {
+            score_group = 54;
+            tscore_group = 51;
         }
-        else if (res_group == 11) {
-            score_group = 50;
-            tscore_group = 50;
-        }
-        else if (res_group == 12) {
+        else if (res_group == 9) {
             score_group = 66;
             tscore_group = 54;
         }
-        else if (res_group == 13) {
+        else if (res_group == 10) {
             score_group = 76;
             tscore_group = 57;
         }
+        else if (res_group == 11) {
+            score_group = 82;
+            tscore_group = 59;
+        }
+        else if (res_group == 12) {
+            score_group = 86;
+            tscore_group = 61;
+        }
+        else if (res_group == 13) {
+            score_group = 90;
+            tscore_group = 63;
+        }
         else if (res_group == 14) {
-            score_group = 84;
-            tscore_group = 60;
-        }
-        else if (res_group == 15) {
-            score_group = 88;
-            tscore_group = 62;
-        }
-        else if (res_group == 16) {
             score_group = 93;
             tscore_group = 65;
         }
-        else if (res_group == 17) {
+        else if (res_group == 15) {
             score_group = 95;
             tscore_group = 66;
         }
-        else if (res_group == 18) {
+        else if (res_group == 16) {
+            score_group = 995;
+            tscore_group = 67;
+        }
+        else if (res_group == 17) {
             score_group = 96;
             tscore_group = 68;
         }
-        else if (res_group == 19) {
+        else if (res_group == 18) {
             score_group = 97;
             tscore_group = 69;
         }
-        else if (res_group == 20) {
-            score_group = 98;
-            tscore_group = 71;
+        else if (res_group == 19) {
+            score_group = 97;
+            tscore_group = 70;
         }
-        else if (res_group == 21) {
+        else if (res_group == 20) {
             score_group = 98;
             tscore_group = 72;
         }
+        else if (res_group == 21) {
+            score_group = 99;
+            tscore_group = 75;
+        }
         else if (res_group == 22) {
-            score_group = 99;
-            tscore_group = 74;
-        }
-        else if (res_group == 23) {
-            score_group = 99;
-            tscore_group = 76;
-        }
-        else if (res_group == 24) {
             score_group = 99;
             tscore_group = 77;
         }
-        else if (res_group == 25) {
-            score_group = 99;
-            tscore_group = 78;
-        }
-        else if (res_group == 26) {
+        else if (res_group == 23) {
             score_group = 99;
             tscore_group = 79;
         }
-        else if (res_group >= 27) {
+        else if (res_group == 24) {
+            score_group = 99;
+            tscore_group = 79;
+        }
+        else if (res_group >= 25) {
             score_group = 99;
             tscore_group = 80;
         }
+        
 
     }
 
@@ -897,71 +884,95 @@ function calc_movimento_e_equilibrio() {
     tscore_group = 0;
 
     if (res_group != 0) {
-        if (res_group == 11) {
-            score_group = 21;
-            tscore_group = 42;
+        if (res_group == 9) {
+            score_group = 16;
+            tscore_group = 40;
+        }
+        else if (res_group == 10) {
+            score_group = 38;
+            tscore_group = 47;
+        }
+        else if (res_group == 11) {
+            score_group = 54;
+            tscore_group = 51;
         }
         else if (res_group == 12) {
-            score_group = 50;
-            tscore_group = 50;
+            score_group = 62;
+            tscore_group = 53;
         }
         else if (res_group == 13) {
-            score_group = 69;
-            tscore_group = 55;
+            score_group = 73;
+            tscore_group = 56;
         }
         else if (res_group == 14) {
             score_group = 79;
             tscore_group = 58;
         }
         else if (res_group == 15) {
-            score_group = 88;
-            tscore_group = 62;
+            score_group = 84;
+            tscore_group = 60;
         }
         else if (res_group == 16) {
+            score_group = 86;
+            tscore_group = 61;
+        }
+        else if (res_group == 17) {
+            score_group = 90;
+            tscore_group = 63;
+        }
+        else if (res_group == 18) {
             score_group = 92;
             tscore_group = 64;
         }
-        else if (res_group == 17) {
-            score_group = 95;
-            tscore_group = 67;
-        }
-        else if (res_group == 18) {
-            score_group = 95;
-            tscore_group = 67;
-        }
         else if (res_group == 19) {
-            score_group = 96;
-            tscore_group = 68;
+            score_group = 95;
+            tscore_group = 66;
         }
         else if (res_group == 20) {
+            score_group = 95;
+            tscore_group = 67;
+        }
+        else if (res_group == 21) {
+            score_group = 97;
+            tscore_group = 69;
+        }
+        else if (res_group == 22) {
             score_group = 97;
             tscore_group = 70;
         }
-        else if (res_group == 21) {
+        else if (res_group == 23) {
             score_group = 98;
             tscore_group = 71;
         }
-        else if (res_group == 22) {
+        else if (res_group >= 24 && res_group <= 25) {
             score_group = 98;
             tscore_group = 72;
         }
-        else if (res_group == 23) {
+        else if (res_group == 26) {
             score_group = 99;
             tscore_group = 73;
         }
-        else if (res_group >= 24 && res_group <= 27) {
+        else if (res_group == 27) {
+            score_group = 99;
+            tscore_group = 74;
+        }
+        else if (res_group >= 28 && res_group<=29) {
             score_group = 99;
             tscore_group = 75;
         }
-        else if (res_group >= 28 && res_group <= 31) {
+        else if (res_group == 30) {
             score_group = 99;
             tscore_group = 76;
         }
-        else if (res_group == 32) {
+        else if (res_group == 31 || res_group == 32) {
             score_group = 99;
-            tscore_group = 77;
+            tscore_group = 78;
         }
-        else if (res_group >= 33) {
+        else if (res_group == 33) {
+            score_group = 99;
+            tscore_group = 79;
+        }
+        else if (res_group >= 34) {
             score_group = 99;
             tscore_group = 80;
         }
@@ -1028,87 +1039,115 @@ function calc_planeamento_motor_e_ideacao() {
 
     if (res_group != 0) {
 
-        if (res_group == 9) {
+        if (res_group == 10) {
             score_group = 16;
             tscore_group = 40;
         }
-        else if (res_group == 10) {
-            score_group = 42;
-            tscore_group = 48;
-        }
         else if (res_group == 11) {
+            score_group = 38;
+            tscore_group = 47;
+        }
+        else if (res_group == 12) {
+            score_group = 50;
+            tscore_group = 50;
+        }
+        else if (res_group == 13) {
             score_group = 58;
             tscore_group = 52;
         }
-        else if (res_group == 12) {
+        else if (res_group == 14) {
+            score_group = 56;
+            tscore_group = 54;
+        }
+        else if (res_group == 15) {
             score_group = 69;
             tscore_group = 55;
         }
-        else if (res_group == 13) {
+        else if (res_group == 16) {
+            score_group = 76;
+            tscore_group = 57;
+        }
+        else if (res_group == 17) {
             score_group = 79;
             tscore_group = 58;
         }
-        else if (res_group == 14) {
+        else if (res_group == 18) {
+            score_group = 82;
+            tscore_group = 59;
+        }
+        else if (res_group == 19) {
+            score_group = 84;
+            tscore_group = 60;
+        }
+        else if (res_group == 20) {
             score_group = 86;
             tscore_group = 61;
         }
-        else if (res_group == 15) {
+        else if (res_group == 21) {
+            score_group = 88;
+            tscore_group = 62;
+        }
+        else if (res_group == 22) {
+            score_group = 88;
+            tscore_group = 62;
+        }
+        else if (res_group == 23) {
+            score_group = 90;
+            tscore_group = 63;
+        }
+        else if (res_group == 24) {
             score_group = 92;
             tscore_group = 64;
         }
-        else if (res_group == 16) {
-            score_group = 93;
-            tscore_group = 65;
+        else if (res_group == 25) {
+            score_group = 95;
+            tscore_group = 66;
         }
-        else if (res_group == 17) {
+        else if (res_group == 26) {
             score_group = 95;
             tscore_group = 67;
         }
-        else if (res_group == 18) {
+        else if (res_group == 27) {
             score_group = 97;
-            tscore_group = 69;
+            tscore_group = 68;
         }
-        else if (res_group == 19) {
+        else if (res_group == 28) {
+            score_group = 97;
+            tscore_group = 70;
+        }
+        else if (res_group == 29) {
             score_group = 98;
             tscore_group = 71;
         }
-        else if (res_group == 20) {
+        else if (res_group == 30 || res_group == 31) {
             score_group = 98;
             tscore_group = 72;
         }
-        else if (res_group == 21) {
+        else if (res_group == 32 || res_group==33) {
+            score_group = 99;
+            tscore_group = 73;
+        }
+        else if (res_group == 34 || res_group == 35) {
             score_group = 99;
             tscore_group = 74;
         }
-        else if (res_group == 22) {
-            score_group = 99;
-            tscore_group = 74;
-        }
-        else if (res_group == 23) {
+        else if (res_group == 36) {
             score_group = 99;
             tscore_group = 75;
         }
-        else if (res_group == 24) {
-            score_group = 99;
-            tscore_group = 75;
-        }
-        else if (res_group == 25) {
+        else if (res_group == 37) {
             score_group = 99;
             tscore_group = 76;
         }
-        else if (res_group == 26) {
-            score_group = 99;
-            tscore_group = 76;
-        }
-        else if (res_group == 27) {
-            score_group = 99;
-            tscore_group = 77;
-        }
-        else if (res_group == 28) {
+        else if (res_group == 38) {
             score_group = 99;
             tscore_group = 78;
         }
-        else if (res_group >= 29) {
+        else if (res_group == 39) {
+            score_group = 99;
+            tscore_group = 79;
+        }
+        else if (res_group == 40) {
             score_group = 99;
             tscore_group = 80;
         }
@@ -1148,159 +1187,147 @@ function calc_tscore_total() {
     console.log("calc_tscore_total | tscore_total = " + tscore_total);
 
     if (tscore_total != 0) {
-        if (tscore_total >= 58 && tscore_total <= 62) {
+        if (tscore_total >= 42 && tscore_total <= 43) {
             tscore_group = 40;
             score_group = 16;
         }
-        else if (tscore_total >= 63 && tscore_total <= 63) {
-            tscore_group = 42;
-            score_group = 21;
-        }
-        else if (tscore_total >= 64 && tscore_total <= 64) {
+        else if (tscore_total >= 44 && tscore_total <= 44) {
             tscore_group = 43;
             score_group = 24;
         }
-        else if (tscore_total >= 65 && tscore_total <= 65) {
+        else if (tscore_total >= 45 && tscore_total <= 45) {
             tscore_group = 45;
             score_group = 31;
         }
-        else if (tscore_total >= 66 && tscore_total <= 66) {
-            tscore_group = 46;
-            score_group = 34;
-        }
-        else if (tscore_total >= 67 && tscore_total <= 67) {
+        else if (tscore_total >= 46 && tscore_total <= 46) {
             tscore_group = 47;
             score_group = 38;
         }
-        else if (tscore_total >= 68 && tscore_total <= 68) {
-            tscore_group = 48;
-            score_group = 42;
-        }
-        else if (tscore_total >= 69 && tscore_total <= 69) {
+        else if (tscore_total >= 47 && tscore_total <= 47) {
             tscore_group = 49;
             score_group = 46;
         }
-        else if (tscore_total >= 70 && tscore_total <= 70) {
+        else if (tscore_total >= 48 && tscore_total <= 48) {
             tscore_group = 50;
             score_group = 50;
         }
-        else if (tscore_total >= 71 && tscore_total <= 71) {
+        else if (tscore_total >= 49 && tscore_total <= 49) {
             tscore_group = 51;
             score_group = 54;
         }
-        else if (tscore_total >= 72 && tscore_total <= 73) {
+        else if (tscore_total >= 50 && tscore_total <= 50) {
             tscore_group = 52;
             score_group = 58;
         }
-        else if (tscore_total >= 74 && tscore_total <= 74) {
+        else if (tscore_total >= 51 && tscore_total <= 51) {
             tscore_group = 53;
             score_group = 62;
         }
-        else if (tscore_total >= 75 && tscore_total <= 75) {
+        else if (tscore_total >= 52 && tscore_total <= 52) {
             tscore_group = 54;
             score_group = 66;
         }
-        else if (tscore_total >= 76 && tscore_total <= 76) {
+        else if (tscore_total >= 53 && tscore_total <= 54) {
             tscore_group = 55;
             score_group = 69;
         }
-        else if (tscore_total >= 77 && tscore_total <= 78) {
+        else if (tscore_total >= 55 && tscore_total <= 55) {
             tscore_group = 56;
-            score_group = 73;
+            score_group = 76;
         }
-        else if (tscore_total >= 79 && tscore_total <= 79) {
+        else if (tscore_total >= 56 && tscore_total <= 57) {
             tscore_group = 57;
             score_group = 76;
         }
-        else if (tscore_total >= 80 && tscore_total <= 81) {
+        else if (tscore_total >= 58 && tscore_total <= 59) {
             tscore_group = 58;
             score_group = 79;
         }
-        else if (tscore_total >= 82 && tscore_total <= 83) {
+        else if (tscore_total >= 60 && tscore_total <= 61) {
             tscore_group = 59;
             score_group = 82;
         }
-        else if (tscore_total >= 84 && tscore_total <= 85) {
+        else if (tscore_total >= 62 && tscore_total <= 63) {
             tscore_group = 60;
             score_group = 84;
         }
-        else if (tscore_total >= 86 && tscore_total <= 87) {
+        else if (tscore_total >= 64 && tscore_total <= 66) {
             tscore_group = 61;
             score_group = 86;
         }
-        else if (tscore_total >= 88 && tscore_total <= 88) {
-            tscore_group = 62;
+        else if (tscore_total >= 67 && tscore_total <= 68) {
+            tscore_group = 52;
             score_group = 88;
         }
-        else if (tscore_total >= 89 && tscore_total <= 90) {
+        else if (tscore_total >= 69 && tscore_total <= 70) {
             tscore_group = 63;
             score_group = 90;
         }
-        else if (tscore_total >= 91 && tscore_total <= 92) {
+        else if (tscore_total >= 71 && tscore_total <= 73) {
             tscore_group = 64;
             score_group = 92;
         }
-        else if (tscore_total >= 93 && tscore_total <= 94) {
+        else if (tscore_total >= 74 && tscore_total <= 77) {
             tscore_group = 65;
             score_group = 93;
         }
-        else if (tscore_total >= 95 && tscore_total <= 98) {
+        else if (tscore_total >= 78 && tscore_total <= 79) {
             tscore_group = 66;
             score_group = 95;
         }
-        else if (tscore_total >= 99 && tscore_total <= 103) {
+        else if (tscore_total >= 80 && tscore_total <= 81) {
             tscore_group = 67;
             score_group = 95;
         }
-        else if (tscore_total >= 104 && tscore_total <= 105) {
+        else if (tscore_total >= 82 && tscore_total <= 83) {
             tscore_group = 68;
             score_group = 96;
         }
-        else if (tscore_total >= 106 && tscore_total <= 110) {
+        else if (tscore_total >= 84 && tscore_total <= 86) {
             tscore_group = 69;
             score_group = 97;
         }
-        else if (tscore_total >= 111 && tscore_total <= 112) {
+        else if (tscore_total >= 87 && tscore_total <= 87) {
             tscore_group = 70;
             score_group = 97;
         }
-        else if (tscore_total >= 113 && tscore_total <= 118) {
+        else if (tscore_total >= 88 && tscore_total <= 93) {
             tscore_group = 71;
             score_group = 98;
         }
-        else if (tscore_total >= 119 && tscore_total <= 136) {
+        else if (tscore_total >= 94 && tscore_total <= 95) {
             tscore_group = 72;
             score_group = 98;
         }
-        else if (tscore_total >= 137 && tscore_total <= 138) {
+        else if (tscore_total >= 96 && tscore_total <= 98) {
             tscore_group = 73;
             score_group = 99;
         }
-        else if (tscore_total >= 139 && tscore_total <= 139) {
+        else if (tscore_total >= 99 && tscore_total <= 107) {
             tscore_group = 74;
             score_group = 99;
         }
-        else if (tscore_total >= 140 && tscore_total <= 140) {
+        else if (tscore_total >= 108 && tscore_total <= 108) {
             tscore_group = 75;
             score_group = 99;
         }
-        else if (tscore_total >= 141 && tscore_total <= 147) {
+        else if (tscore_total >= 109 && tscore_total <= 114) {
             tscore_group = 76;
             score_group = 99;
         }
-        else if (tscore_total >= 148 && tscore_total <= 148) {
+        else if (tscore_total >= 115 && tscore_total <= 116) {
             tscore_group = 77;
             score_group = 99;
         }
-        else if (tscore_total >= 149 && tscore_total <= 150) {
+        else if (tscore_total >= 117 && tscore_total <= 118) {
             tscore_group = 78;
             score_group = 99;
         }
-        else if (tscore_total >= 151 && tscore_total <= 152) {
+        else if (tscore_total >= 119 && tscore_total <= 129) {
             tscore_group = 79;
             score_group = 99;
         }
-        else if (tscore_total >= 153 && tscore_total <= 232) {
+        else if (tscore_total >= 130) {
             tscore_group = 80;
             score_group = 99;
         }
