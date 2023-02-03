@@ -1,0 +1,667 @@
+<body class="cmsbased-ltr" style="background-image: url(https://my.dominios.pt/modules/addons/hexa_extras/hexa_image.php?getfile=hexa_background_image)">
+  
+    
+  <!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WT4VKC"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	
+
+
+        <link href="https://my.dominios.pt//assets/css/style.css" rel="stylesheet" type="text/css">
+		<link href="https://my.dominios.pt//assets/css/product-icons.css" rel="stylesheet" type="text/css">
+		<link href="https://my.dominios.pt//assets/css/payments-icons.css" rel="stylesheet" type="text/css">
+
+        <!--
+        <div class="hexa-container hidden-xs"><a href="/contact.php" class="btn btn-xs btn-default hexa-btn" data-original-title="Contacte-nos"><i class="fa fa-send-o"></i></a></div>-->
+        <nav class="navbar hx-top-header" role="navigation">
+          <div class="container">
+                        <a href="https://www.dominios.pt/" class="navbar-brand" style="background-image: url(https://my.dominios.pt/modules/addons/hexa_extras/hexa_image.php?&amp;getfile=hexa_logo_file);  width:150px"></a>
+                        <ul class="nav navbar-nav hx-top-nav">
+              <li class="nav-item visible-xs"><span class="nav-link"><span aria-hidden="true" class="icon icon-menu btn-nav-toggle-responsive"></span></span></li>
+            </ul>
+
+            
+            <ul class="nav navbar-nav hx-user-nav hidden-xs">
+              <li class="dropdown nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle nav-link"> <img src="https://www.gravatar.com/avatar/150005fe04ccaefedd45ca6b1d9c495b?s=50&amp;d=mm" class="avatar"><span class="user-name">Sérgio Pinto <span style="color:#74bf35;margin:0px 5px;">|</span> ID:  197250</span><span class="angle-down icon icon-arrow-down"></span></a>
+                <div role="menu" class="dropdown-menu">
+                  <a class="dropdown-item" href="/clientarea.php?action=details"><span aria-hidden="true" class="icon icon-user"></span> Editar Detalhes de Conta</a>
+                  <a class="dropdown-item" href="/clientarea.php?action=changepw"><span aria-hidden="true" class="icon icon-lock"></span> Alterar senha</a>
+                  <a class="dropdown-item" href="/clientarea.php?action=addfunds"><span aria-hidden="true" class="icon icon-plus"></span> Adicionar fundos</a>                                    <a class="dropdown-item" href="/logout.php"><span aria-hidden="true" class="icon icon-logout"></span> Sair</a>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav hx-icons-nav hidden-xs">
+              <li class="dropdown nav-item hx-messages" title="E-mails Enviados"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span class="icon icon-envelope"></span></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <div class="title">E-mails Enviados</div>
+                    <div class="hx-scroller ps-messages ps-container ps-theme-default" data-ps-id="044353e1-c135-ea72-4f56-9e48dec70d95">
+                      <div class="content">
+                        <ul>
+                                                    <li><a href="#" onclick="popupWindow('/viewemail.php?id=7028009','emlmsg',960,480);return false;">
+                            <div class="icon"><span aria-hidden="true" class="icon icon-envelope"></span></div>
+                            <div class="content"><span class="date"><span class="glyphicon glyphicon-time"></span> 21H</span>
+                              <span class="name">Dominios.PT</span><span class="desc">Confirmação da encomenda ID 7647872171</span></div></a>
+                            </li>
+                                                        <li><a href="#" onclick="popupWindow('/viewemail.php?id=7027993','emlmsg',960,480);return false;">
+                            <div class="icon"><span aria-hidden="true" class="icon icon-envelope"></span></div>
+                            <div class="content"><span class="date"><span class="glyphicon glyphicon-time"></span> 21H</span>
+                              <span class="name">Dominios.PT</span><span class="desc">Nova conta de cliente para Dominios.PT</span></div></a>
+                            </li>
+                                                          </ul>
+                          </div>
+                        <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+                        <div class="footer"> <a href="/clientarea.php?action=emails">Ver Todos</a></div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown nav-item hx-notifications" title="Notificações"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span class="icon icon-bell"></span></a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <div class="title">Notificações</div>
+                        <div class="hx-scroller">
+                          <div class="content">
+                            <ul>
+                                                                                                                                                                                  </ul>
+                          </div></div>
+                          <div class="footer"> <a href="/serverstatus.php">Estado da Rede</a></div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item hx-settings"><a href="/cart.php?a=view" class="nav-link"><span aria-hidden="true" class="icon icon-basket" title="Carrinho de Compras"></span><span class="cart-items">0</span></a></li>
+                                                            <li class="dropdown nav-item hx-settings"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle" title="Idioma"><span class="icon icon-globe-alt"></span></a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <div class="title">Escolher idioma</div>
+                          <div class="hx-scroller ps-languages ps-container ps-theme-default" data-ps-id="9fddb717-3d0c-991e-f95e-dc4ce8ca76f4">
+                            <div class="content">
+                              <ul>
+                                                                	                                                                	                                                                	                                                                	                                                                	                                                                	                                                                	                                                                	                                                                																																						<li class="dropdown-item"><a href="/clientarea.php?language=english" data-lang="english">English</a></li>
+																		                               		                                                                	                                                                	                                                                																																						<li class="dropdown-item"><a href="/clientarea.php?language=french" data-lang="french">Français</a></li>
+																		                               		                                                                	                                                                	                                                                	                                                                	                                                                	                                                                	                                                                	                                                                																																						<li class="dropdown-item"><a href="/clientarea.php?language=portuguese-pt" data-lang="portuguese-pt">Português</a></li>
+																		                               		                                                                	                                                                	                                                                	                                                                	                                                                	                                                                	                                                              </ul>
+                            </div>
+                          <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+
+                        </li>
+                      </ul>
+                    </li>
+                                      </ul>
+                                  </div>
+              </nav>
+		
+		<!-- TOP SUPPORT MENU hbarata-->
+		<div class="container deleteMobile" style="margin-bottom:4px;padding:0px;">
+		<ul style="display: block;" class="topMenuSupport">
+		<li class=" ">
+		<a href="https://kb.dominios.pt" target="_blank" data-original-title="Base de Conhecimento" class=" waves-effect waves-light waves-round">
+		<span class="hidden-minibar hide"> Base de Conhecimento</span>
+		</a>
+		</li>
+		<li class=" ">
+		<a href="https://my.dominios.pt/supporttickets.php" data-original-title="Tickets de Suporte" class=" waves-effect waves-light waves-round">
+		<span class="hidden-minibar hide"> Tickets de Suporte</span>
+		</a>
+		</li>
+		<li class=" ">
+		<a href="https://my.dominios.pt/submitticket.php" data-original-title="Abrir Novo Ticket" class=" waves-effect waves-light waves-round">
+		<span class="hidden-minibar hide"> Abrir Novo Ticket</span>
+		</a>
+		</li>
+		</ul>
+		</div>
+		<!-- / TOP SUPPORT MENU -->
+		
+		
+              <div class="site-holder container">
+                <div class="box-holder">
+                 											<div class="left-sidebar">
+											<div class="sidebar-holder" data-original-title="" title="">
+																								<ul class="nav nav-list">
+													<li class="nav-toggle"><button class="btn  btn-nav-toggle"><i class="fa                             toggle-left fa-angle-double-right" style="color:#95C11F;"></i> </button></li>
+
+														
+														<li class="menu-dashboard">
+															<a href="https://my.dominios.pt/clientarea.php" data-original-title="Área de Cliente" class=" waves-effect waves-light waves-round" aria-describedby="tooltip699626">
+															<span aria-hidden="true" class=" icon icon-speedometer "></span>															<span class="hidden-minibar"> Área de Cliente</span> 																													</a>
+																											</li>
+													
+														<li class="menu-account  submenu">
+															<a href="javascript:;" data-original-title="Conta" class="dropdown   waves-effect waves-light waves-round">
+															<span aria-hidden="true" class=" icon icon-user "></span>															<span class="hidden-minibar"> Conta</span>  <span class="fa arrow rotate"> </span>																													</a>
+																												<ul style="display: none;">
+																														<li class=" ">
+																<a href="https://my.dominios.pt/clientarea.php?action=details" data-original-title="Os Meus Dados" class=" waves-effect waves-light waves-round">
+																																		<span class="hidden-minibar"> Os Meus Dados</span>
+																																	</a>
+															</li>
+																														<li class=" ">
+																<a href="https://my.dominios.pt/clientarea.php?action=contacts" data-original-title="Contactos/Sub-Contactos" class=" waves-effect waves-light waves-round">
+																																		<span class="hidden-minibar"> Contactos/Sub-Contactos</span>
+																																	</a>
+															</li>
+																														<li class=" ">
+																<a href="https://my.dominios.pt/clientarea.php?action=changepw" data-original-title="Alterar senha" class=" waves-effect waves-light waves-round">
+																																		<span class="hidden-minibar"> Alterar senha</span>
+																																	</a>
+															</li>
+																														<li class=" ">
+																<a href="https://my.dominios.pt/clientarea.php?action=security" data-original-title="Configurações de Segurança" class=" waves-effect waves-light waves-round">
+																																		<span class="hidden-minibar"> Configurações de Segurança</span>
+																																	</a>
+															</li>
+																													</ul>
+																											</li>
+													
+														<li class="submenu">
+															<a href="javascript:;" data-original-title="Dominios" class="dropdown   waves-effect waves-light waves-round">
+															<span aria-hidden="true" class=" icon icon-globe "></span>															<span class="hidden-minibar"> Dominios</span>  <span class="fa arrow rotate"> </span>																													</a>
+																												<ul style="display: none;">
+																														<li class=" ">
+																<a href="https://my.dominios.pt/clientarea.php?action=domains" data-original-title="Ver Todos" class=" waves-effect waves-light waves-round">
+																																		<span class="hidden-minibar"> Ver Todos</span>
+																																	</a>
+															</li>
+																														<li class=" ">
+																<a href="https://my.dominios.pt/cart.php?gid=renewals" data-original-title="Pedido de Renovação" class=" waves-effect waves-light waves-round">
+																																		<span class="hidden-minibar"> Pedido de Renovação</span>
+																																	</a>
+															</li>
+																														<li class=" ">
+																<a href="https://my.dominios.pt/cart.php?a=add&amp;domain=register" data-original-title="Registar" class=" waves-effect waves-light waves-round">
+																																		<span class="hidden-minibar"> Registar</span>
+																																	</a>
+															</li>
+																													</ul>
+																											</li>
+													
+														<li class="">
+															<a href="https://my.dominios.pt/clientarea.php?action=products" data-original-title="Serviço(s)" class=" waves-effect waves-light waves-round">
+															<span aria-hidden="true" class=" icon icon-layers "></span>															<span class="hidden-minibar"> Serviço(s)</span> 																													</a>
+																											</li>
+													
+														<li class="">
+															<a href="https://my.dominios.pt/clientarea.php?action=invoices" data-original-title="Avisos de Pagamento" class=" waves-effect waves-light waves-round">
+															<span aria-hidden="true" class=" icon icon-drawer "></span>															<span class="hidden-minibar"> Avisos de Pagamento</span> 																													</a>
+																											</li>
+													
+														<li class="submenu">
+															<a href="javascript:;" data-original-title="Suporte" class="dropdown   waves-effect waves-light waves-round">
+															<span aria-hidden="true" class=" icon icon-support "></span>															<span class="hidden-minibar"> Suporte</span>  <span class="fa arrow rotate"> </span>																													</a>
+																												<ul style="display: none;">
+																														<li class=" ">
+																<a href="https://my.dominios.pt/submitticket.php" data-original-title="Abrir Novo Ticket" class=" waves-effect waves-light waves-round">
+																																		<span class="hidden-minibar"> Abrir Novo Ticket</span>
+																																	</a>
+															</li>
+																														<li class=" ">
+																<a href="https://my.dominios.pt/supporttickets.php" data-original-title="Tickets de Suporte" class=" waves-effect waves-light waves-round">
+																																		<span class="hidden-minibar"> Tickets de Suporte</span>
+																																	</a>
+															</li>
+																													</ul>
+																											</li>
+													
+														<li class="visible-xs">
+															<a href="https://my.dominios.pt/logout.php" data-original-title="Sair" class=" waves-effect waves-light waves-round">
+															<span aria-hidden="true" class=" icon icon-logout "></span>															<span class="hidden-minibar"> Sair</span> 																													</a>
+																											</li>
+													
+														<li class="order-side-menu">
+															<a href="https://my.dominios.pt/cart.php" data-original-title="Encomenda" class=" waves-effect waves-light waves-round">
+															<span aria-hidden="true" class=" icon icon-basket "></span>															<span class="hidden-minibar"> Encomenda</span> 																													</a>
+																											</li>
+																									</ul>
+																							</div>
+										</div>
+                                    <div class="content  main-content onload">
+                    <div class="row">
+                      <div class="col-md-12">
+                                                                        <div id="cmsbased_alerts_holder"></div>
+
+
+    <div class="row">
+    	<div class="col-md-12">
+    		<h3 class="page-header"><span aria-hidden="true" class="icon icon-speedometer"></span> Área de Cliente <i class="fa fa-angle-down show-info" aria-hidden="true"></i>
+                  </h3>
+        <blockquote class="page-information hidden">
+         <p>Bem vindo ao painel de gestão. Aqui pode gerir os seus serviços, ver cotações, pagar facturas e pedir ajuda.</p>
+       </blockquote>
+     </div>
+   </div>
+   <div class="row px-1 pt-1">
+     <div class="col-md-4">
+      <a title="Serviço(s)" href="clientarea.php?action=products">
+       <div class="info-box bg-info text-white" id="initial-tour">
+        <div class="info-icon bg-info-dark">
+         <span aria-hidden="true" class="icon icon-layers"></span>
+       </div>
+       <div class="info-details">
+         <h4>Serviço(s)<span class="pull-right flip">0</span></h4>
+         <p>Ativo<span class="badge pull-right flip bg-white text-success"> 0</span> </p>
+       </div>
+     </div>
+   </a>
+ </div>
+ <div class="col-md-4">
+  <a title="Dominios" href="clientarea.php?action=domains">
+   <div class="info-box bg-info text-white">
+    <div class="info-icon bg-info-dark">
+     <span aria-hidden="true" class="icon icon-globe"></span>
+   </div>
+   <div class="info-details">
+     <h4>Domínios<span class="pull-right flip">1</span></h4>
+     <p>Ativo<span class="badge pull-right flip bg-white text-success"> 0 </span> </p>
+   </div>
+ </div>
+</a>
+</div>
+<div class="col-md-4">
+<a title="0" href="clientarea.php?action=invoices">
+  <div class="info-box bg-info text-white">
+   <div class="info-icon bg-info-dark">
+    <span aria-hidden="true" class="icon icon-drawer"></span>
+  </div>
+  <div class="info-details">
+    <h4>Avisos de Pagamento<span class="pull-right flip">0</span></h4>
+    <p><span class="badge">0,00 €</span></p>
+  </div>
+</div>
+</a>
+</div>
+<div class="col-md-4">
+<a title="Adicionar fundos" href="clientarea.php?action=addfunds">
+  <div class="info-box  bg-warn text-white">
+   <div class="info-icon bg-warn-dark">
+    <span aria-hidden="true" class="icon icon-wallet"></span>
+  </div>
+  <div class="info-details">
+    <h4>Saldo da Conta<span class="pull-right flip">0,00 €</span></h4>
+    <p>Adicionar fundos</p>
+  </div>
+</div>
+</a>
+</div>
+<div class="col-md-4">
+ <a title="Adicionar ao carrinho" href="cart.php">
+  <div class="info-box  bg-inactive  text-white">
+   <div class="info-icon bg-inactive-dark">
+    <span aria-hidden="true" class="icon icon-plus"></span>
+  </div>
+  <div class="info-details">
+    <h4>Adicionar ao carrinho</h4>
+    <p>Número de Produtos/Serviços</p>
+  </div>
+</div>
+</a>
+</div>
+</div>
+
+
+<!-- ###### MENSAGEM PARA CLIENTES **TOPO ** ###########################
+
+
+
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="p-1">
+		
+		 <ul class="nav nav-material nav-material-horizontal" style="margin-bottom: 0px !important">
+			 <li class="active">
+			 <a href="" style="font-size: 0.9em;color:#666; width: 100%;text-transform: none;line-height: 1.5em;"><i class="fas fa-info-circle" style="color:#25A5DF;margin-right: 6px;font-size: 20px;"></i> <strong style="font-size: 1.2em;">Importante</strong> <br><br> 
+<b>Informação - Suporte Telefónico indisponível de 26 a 30 Dezembro 2022</b><br>
+Excecionalmente a nossa Linha de Atendimento Telefónico estará indisponível no período de 26 a 30 de Dezembro.<br>
+A Dominios.pt irá utilizar este período entre as festividades de Natal e Ano Novo, durante o qual há uma redução significativa dos contactos via telefone, para realizar uma intervenção de otimização na plataforma que utiliza para a gestão dos pedidos de suporte por este meio.<br>
+Asseguramos que continuamos disponíveis para responder aos Pedidos de Suporte que pode submeter através da sua Área de Cliente.<br>
+Agradecemos desde já a sua compreensão.<br>
+
+
+</a>
+			 </li></ul> 
+		
+	  </div></div></div>
+
+###### MENSAGEM PARA CLIENTES **TOPO ** ########################### -->
+
+
+
+<!-- ############### NEW MKT CODE ############### -->
+
+<div class="row px-1 pt-1 mktHomerow">
+	
+<div class="col-md-12" style="margin:0px 0px 20px;">
+	<h2 class="mktHomeH2Title">Serviços Recomendados</h2>
+</div>
+
+<div class="col-md-3 deleteMobile">
+		<a href="https://www.dominios.pt/alojamento/web/business/planos?cp=bhosting" style="" <="" a="">
+			<div class="mktHomeBoxDiv">
+				<img src="../assets/img/banners_cp/img_jan_23_001.jpg" style="width: 100%;">
+				<h4>NOVO Alojamento Web</h4>
+				<p class="discountElement">Até 70% Desconto</p>
+				<p>Tudo o que necessita para colocar o seu site online.</p>
+				
+			</div>
+		</a>
+</div><!-- /col-md-3 -->
+
+
+<div class="col-md-3">
+		<a href="https://www.dominios.pt/alojamento/web/wordpress/planos?cp=bwordpress" style="" <="" a="">
+			<div class="mktHomeBoxDiv">
+				<img src="../assets/img/banners_cp/img_jan_23_002.jpg" style="width: 100%;">
+				<h4>WordPress</h4>
+				<p class="discountElement">Até 30% Desconto</p>
+				<p> Domínio .pt GRÁTIS por 1 ano, OFERTA SSL &amp; Imunify360</p>
+				
+			</div>
+		</a>
+</div><!-- /col-md-3 -->
+
+ <div class="col-md-3 deleteMobile">
+		<a href="https://www.dominios.pt/vps/cloud/servers/planos" style="" <="" a="">
+			<div class="mktHomeBoxDiv">
+				<img src="../assets/img/banners_cp/img_jan_23_003.jpg" style="width: 100%;">
+				<h4>VPS Servidores Virtuais</h4>
+				<p class="discountElement">Até 30% Desconto</p>
+				<p>Servidores virtuais de alta performance e segurança.</p>
+				
+			</div>
+		</a>
+</div> <!-- /col-md-3 -->
+
+
+ <div class="col-md-3 deleteMobile">
+		<a href="https://www.dominios.pt/web-design/contacto" style="" <="" a="">
+			<div class="mktHomeBoxDiv">
+				<img src="../assets/img/banners_cp/img_jan_23_004.jpg" style="width: 100%;">
+				<h4>Criamos o seu Site</h4>
+				<p class="discountElement">Orçamento Gratuito</p>
+				<p>Design moderno, profissional e visível em todos os dispositivos</p>
+				
+			</div>
+		</a>
+</div> <!-- /col-md-3 -->
+
+<!--<div class="col-md-3 deleteMobile">
+		<a href="https://www.dominios.pt/web-design/contacto" style=""</a>
+			<div class="mktHomeBoxDiv">
+				<img src="../assets/img/banners_cp/img_4.jpg" style="width: 100%;" />
+				<h4>Criamos o seu Site</h4>
+				<p class="discountElement">Peça um Contacto</p>
+				<p>Confie em nós para desenvolver o seu Site!</p>
+				
+			</div>
+		</a>
+</div>-->
+ <!-- /col-md-3 -->
+
+<!--<div class="col-md-3 deleteMobile">
+		<a href="https://www.dominios.pt/email/profissional/planos?cp=bemail" style=""</a>
+			<div class="mktHomeBoxDiv">
+				<img src="../assets/img/banners_cp/img_2.jpg" style="width: 100%;" />
+				<h4>Email Profissional</h4>
+				<p class="noDiscountElement">A Internet na sua mão</p>
+				<p>Aceda ao email, contactos e agenda quando e onde quiser.</p>
+				
+			</div>
+		</a>
+</div>-->
+<!-- /col-md-3 -->
+
+
+
+</div><!-- /mktHomerow -->
+
+
+<!-- NEW MKT CODE WHOIS ############### -->
+
+<div class="whoisDominios clientareaWhois">
+	
+	
+  <form action="https://my.dominios.pt/cart.php?a=add&amp;domain=register" method="post" class="whoisForm">
+<input type="hidden" name="token" value="269ea86ac80e126ee26427191ec0549fc50a00f5">
+    <input id="domain-search-name" type="text" class="wwWhois form-control whoisInput" autocomplete="off" name="query" placeholder="procure o seu dominio...">
+    <button id="domain-search-button" class="x-btn x-btn-mini" data-options="thumbnail: ''" type="submit">
+    		<i class="x-icon mvn mln mrs x-icon-search" data-x-icon="" aria-hidden="true"></i>
+        <span>PESQUISAR</span>
+		</button>
+  </form>
+
+	
+</div>
+<script>
+jQuery("form.whoisForm").submit(function (e) {
+  var domain = jQuery("#domain-search-name").val();
+  console.log(domain);
+  if(!domain.includes(".")){
+    jQuery("#domain-search-name").val(domain+".pt");
+  }
+});
+</script>
+
+<!-- ############### /NEW MKT CODE ###############  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ###### MENSAGEM PARA CLIENTES ** EM BAIXO ** ###########################
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="p-1">
+		
+		 <ul class="nav nav-material nav-material-horizontal" style="margin-bottom: 0px !important">
+			 <li class="active">
+			 <a href="" style="font-size: 0.9em;color:#666; width: 100%;text-transform: none;"><i class="fas fa-info-circle" style="color:#25A5DF;margin-right: 6px;font-size: 20px;"></i> <strong style="font-size: 1.2em;">Alerta Phishing</strong> <br><br> 
+
+Alguns clientes receberam uma mensagem de Phishing, enviada a partir de um endereço de email que NÃO pertence à Dominios.pt, que alerta indevidamente sobre a expiração de um domínio.<br>
+Estas mensagens estão a ser enviadas em nome da Dominios.pt mas este envio é-nos totalmente alheio pelo que deve ignorar esta mensagem e apagá-la. NÃO realize nenhuma ação nem clique em nenhum dos links existente nesse email.<br>
+Confirme sempre a data de expiração dos seus serviços e/ou domínios através da sua Área de Cliente antes de realizar qualquer pagamento.<br>
+Asseguramos que todos os intervenientes e entidades que gerem as fontes deste ataque de phishing já foram notificadas para que seja bloqueado e mitigado este envio pelo que não é necessário abrir pedido de suporte, a nossa equipa já está a atuar e reportar via Abuse de forma a minimizar o impacto deste envio.
+
+</a>
+			 </li></ul>
+		
+	  </div></div></div>
+    
+###### MENSAGEM PARA CLIENTES ** EM BAIXO **  ########################### -->
+
+
+
+
+
+
+
+<!-- ###### ADWORDS ########################### 
+
+
+<div class="row"><div class="col-md-12"><div class="p-1" style="padding: 10px 10px 10px 5px;">
+   
+    <ul class="nav nav-material nav-material-horizontal" style="margin-bottom: 0px;">
+     <li class="active"><a style="padding: 10px 15px; color: #333 !important;text-transform: none;">Peça já o seu Cupão <strong style="font-size: 1.2em;"> 60€ <span style="color: #4285F4">G</span><span style="color: #DB4437">o</span><span style="color: #F4B400">o</span><span style="color: #4285F4">g</span><span style="color: #0F9D58">l</span><span style="color: #DB4437">e</span>  Ads</strong>  através de ticket</a></li>
+     <li class="pull-right flip"><a href="submitticket.php" style="padding: 10px 15px;">Pedir Cupão</a></li>
+   </ul>
+		
+</div></div></div>
+
+###### ADWORDS ########################### -->
+
+
+
+
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="p-1">
+        <ul class="nav nav-material nav-material-horizontal">
+     <li class="active"><a href="#home1" data-toggle="tab"><span class="badge badge-circle badge-success">0</span> Tickets de Suporte abertos</a></li>
+     <li class="pull-right flip"><a href="submitticket.php"><span aria-hidden="true" class="icon icon-settings"></span> Abrir Novo Ticket</a></li>
+   </ul>
+   <table class="table table-data table-hover px-1">
+    <thead>
+      <tr>
+        <th>Assunto</th>
+        <th class="hidden-sm hidden-xs">Departamento</th>
+        <th class="hidden-sm hidden-xs">Prioridade</th>
+        <th class="hidden-sm hidden-xs">Ultima actualização</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+            <tr>
+        <td colspan="5" class="norecords">Nenhum Registo Encontrado</td>
+      </tr>    </tbody>
+  </table>
+      <ul class="nav nav-material nav-material-horizontal">
+    <li class="active"><a href="#home2" data-toggle="tab"><span class="badge badge-circle badge-important">0</span> Aviso de Pagamento Pendentes</a></li>
+    <li class="pull-right flip"><a href="clientarea.php?action=masspay&amp;all=true"><span aria-hidden="true" class="icon icon-arrow-right"></span> Pagar Tudo</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="home2">
+
+     <form method="post" action="clientarea.php?action=masspay">
+<input type="hidden" name="token" value="269ea86ac80e126ee26427191ec0549fc50a00f5">
+      <table class="table table-data table-hover">
+       <thead>
+        <tr>         <th class="cell-checkbox">
+          <input type="checkbox" onclick="toggleCheckboxes('invids')">
+        </th>        <th>AVISO DE PAGAMENTO Nº</th>
+        <th class="text-center hidden-sm hidden-xs" style="white-space: nowrap;">Data de Emissão</th>
+        <th class="text-center hidden-sm hidden-xs">Vencimento</th>
+        <th class="text-center hidden-sm hidden-xs">Estado</th>
+        <th class="text-right hidden-sm hidden-xs">Total</th>
+        <th class="cell-view"></th>
+      </tr>
+    </thead>
+    <tbody>   <tr>
+     <td colspan="7" class="norecords">Nenhum Registo Encontrado</td>
+   </tr></tbody>   <tfoot>
+     <tr>
+      <td class="cell-checkbox"><input type="checkbox" onclick="toggleCheckboxes('invids')" class="invids"></td>
+      <td colspan="5" class=""><input type="submit" name="masspayselected" value="Pagar Seleccionado(s)" class="btn btn-default btn-xs"></td><td class="hidden-sm"></td>
+    </tr>
+  </tfoot></table>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+  <div class="right-sidebar right-sidebar-hidden">
+   <div class="right-sidebar-holder ps-container ps-theme-default" data-ps-id="bb9dfad0-3478-f02a-9b9a-326896574287">
+     <h4 class="page-header">Logins<a href="javascript:;" class="theme-panel-close text-primary pull-right flip"><span aria-hidden="true" class="icon icon-close"></span></a></h4>
+          <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+  </div>
+
+
+<div class="col-md-12"><div class="tab-content">
+<a href="https://www.dominios.pt/servidores/" target="_blank">
+<img src="/assets/img/banners/cp-bannet-foot.jpg" style="width:100%;padding:20px;">
+</a>
+</div></div>
+
+
+
+</div><!--/.content-->
+</div>
+</div>
+</div>
+</div>
+<div class="container sub-footer">
+<div class="row">
+<div class="col-md-12">
+	<nav class="std-menu pull-right flip" style="margin-right:-15px;">
+		<ul class="menu">
+		<li class="menu-item"><a href="/clientarea.php">Área de Cliente</a></li>
+		<li class="menu-item"><a href="/cart.php">Encomenda</a></li>
+		<li class="menu-item"><a href="/affiliates.php">Afiliados</a></li>		<li class="menu-item"><a href="/submitticket.php">Abrir Novo Ticket</a></li>
+		<!--<li class="menu-item"><a href="/contact.php">Contacte-nos</a></li>-->
+		</ul>
+	</nav>
+</div>
+</div>
+</div>
+<script src="/templates/hexa/assets/js/bootstrap.min.js"></script>
+<script src="/templates/hexa/assets/js/bootstrap-multiselect.min.js"></script>
+<script src="/templates/hexa/assets/js/jquery.easypiechart.min.js"></script>
+<script src="/templates/hexa/assets/js/owl.carousel.min.js"></script>
+<script src="/templates/hexa/assets/js/perfect-scrollbar.jquery.min.js"></script>
+<script src="/templates/hexa/assets/js/waves.min.js"></script>
+<script src="/templates/hexa/assets/js/cookie.js"></script>
+<script src="/templates/hexa/assets/js/whmcs.js"></script>
+<script src="/assets/js/AjaxModal.js"></script>
+
+<div class="modal system-modal fade" id="modalAjax" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content panel panel-primary">
+            <div class="modal-header panel-heading">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title">Title</h4>
+            </div>
+            <div class="modal-body panel-body">
+                Loading...
+            </div>
+            <div class="modal-footer panel-footer">
+                <div class="pull-left loader">
+                    <i class="fa fa-circle-o-notch fa-spin"></i> Loading...
+                </div>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary modal-submit">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+		<script src="https://my.dominios.pt//assets/js/script.js"></script>
+
+            <script type="text/javascript">
+        TRK = {
+            domain:'dominios.pt',
+            teamblue: 1,
+            _dgt: 1
+        };
+        trk_ext = {
+        };
+        var _dadaq = _dadaq || [];
+        </script>
+
+        <script type="text/javascript">trk_ext.trkC_bill = "197250"</script>
+        <script src="https://trk.teamblue.services/js/trk_standalone.js"></script><div class="tooltip fade right" role="tooltip" id="tooltip699626" style="top: 156.641px; left: 301px; display: block;"><div class="tooltip-arrow" style="top: 50%;"></div><div class="tooltip-inner">Área de Cliente</div></div>
+
+        
+        <script type="text/javascript">
+            CMP = {
+            company: "dominios.pt"
+            };
+        </script>
+        <script type="text/javascript" src="https://cmp.teamblue.services/js/cmp_standalone.min.js"></script>
+
+        
+
+<form method="post" action="/clientarea.php" name="languagefrm" id="languagefrm">
+<input type="hidden" name="token" value="269ea86ac80e126ee26427191ec0549fc50a00f5"><strong>Idioma:</strong> <select name="language" onchange="languagefrm.submit()"><option>Arabic</option><option>Azerbaijani</option><option>Catalan</option><option>Chinese</option><option>Croatian</option><option>Czech</option><option>Danish</option><option>Dutch</option><option>English</option><option>Estonian</option><option>Farsi</option><option>French</option><option>German</option><option>Hebrew</option><option>Hungarian</option><option>Italian</option><option>Macedonian</option><option>Norwegian</option><option>Portuguese-br</option><option selected="selected">Portuguese-pt</option><option>Romanian</option><option>Russian</option><option>Spanish</option><option>Swedish</option><option>Turkish</option><option>Ukranian</option></select></form>
+
+<iframe name="__uspapiLocator" tabindex="-1" role="presentation" aria-hidden="true" title="Blank" style="display: none; position: absolute; width: 1px; height: 1px; top: -9999px;"></iframe><iframe tabindex="-1" role="presentation" aria-hidden="true" title="Blank" src="https://consentcdn.cookiebot.com/sdk/bc-v4.min.html" style="position: absolute; width: 1px; height: 1px; top: -9999px;"></iframe><img height="0" width="0" alt="" src="//trk.dominios.pt/messages/he-man_messages?tke=JTdCJTIyaGFzaCUyMiUzQSUyMjE2NzU0MzM2NDc0NDZfZzFncnFzaWh5eXRfNTBwcDVwJTIyJTJDJTIyZG9tYWluJTIyJTNBJTIyZG9taW5pb3MucHQlMjIlMkMlMjJmaWVsZCUyMiUzQSUyMm1hdGglMjIlMkMlMjJtb2RlJTIyJTNBJTIyc2V0JTIyJTJDJTIybWVzc2FnZSUyMiUzQSU3QiUyMnRyYWNrZXJfdmVyc2lvbiUyMiUzQSUyMjIuMS4xOCUyMiUyQyUyMnFzJTIyJTNBJTdCJTdEJTJDJTIycGFnZSUyMiUzQSUyMm15LmRvbWluaW9zLnB0L2NsaWVudGFyZWEucGhwJTIyJTJDJTIyYmMlMjIlM0ElMjIxOTcyNTAlMjIlMkMlMjJ1c2VyX2FnZW50JTIyJTNBJTIyTW96aWxsYS81LjAlMjAlMjhXaW5kb3dzJTIwTlQlMjAxMC4wJTNCJTIwV2luNjQlM0IlMjB4NjQlMjklMjBBcHBsZVdlYktpdC81MzcuMzYlMjAlMjhLSFRNTCUyQyUyMGxpa2UlMjBHZWNrbyUyOSUyMENocm9tZS8xMDkuMC4wLjAlMjBTYWZhcmkvNTM3LjM2JTIyJTJDJTIydHJrX2ludGVybmFsJTIyJTNBZmFsc2UlMkMlMjJyZXNvbHV0aW9uJTIyJTNBJTdCJTIyaGVpZ2h0JTIyJTNBMTIwMCUyQyUyMndpZHRoJTIyJTNBMTkyMCU3RCUyQyUyMmNvb2tpZV9pZCUyMiUzQSUyMjE4NTQzOTljNTBkNDcxOTBhNTk5YTIzNTk3NmU5OTdkJTIyJTJDJTIyZnAlMjIlM0ElMjJiMTkxYTM1N2E0MDU0NmU4M2RjMTE3MTFjNzk3ZTFmYyUyMiU3RCU3RA==" style="display: none;"><img height="0" width="0" alt="" src="//trk.dominios.pt/messages/he-man_messages?tke=JTdCJTIyaGFzaCUyMiUzQSUyMjE2NzU0MzM2NDc0NDZfZzFncnFzaWh5eXRfNTBwcDVwJTIyJTJDJTIyZG9tYWluJTIyJTNBJTIyZG9taW5pb3MucHQlMjIlMkMlMjJmaWVsZCUyMiUzQSUyMmNvb2tpZUNvbnNlbnRzJTIyJTJDJTIybW9kZSUyMiUzQSUyMnNldCUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElN0IlMjJtYXJrZXRpbmclMjIlM0F0cnVlJTJDJTIybmVjZXNzYXJ5JTIyJTNBdHJ1ZSUyQyUyMnByZWZlcmVuY2VzJTIyJTNBdHJ1ZSUyQyUyMnN0YXRpc3RpY3MlMjIlM0F0cnVlJTdEJTdE" style="display: none;"><img height="0" width="0" alt="" src="//trk.dominios.pt/messages/he-man_messages?tke=JTdCJTIyaGFzaCUyMiUzQSUyMjE2NzU0MzM2NDc0NDZfZzFncnFzaWh5eXRfNTBwcDVwJTIyJTJDJTIyZG9tYWluJTIyJTNBJTIyZG9taW5pb3MucHQlMjIlMkMlMjJmaWVsZCUyMiUzQSUyMnBlcmZvcm1hbmNlJTIyJTJDJTIybW9kZSUyMiUzQSUyMnNldCUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElN0IlMjJ0aW1pbmdzJTIyJTNBJTdCJTIycGFnZUxvYWRUaW1lJTIyJTNBMTg1OSUyQyUyMmNvbm5lY3RUaW1lJTIyJTNBMTA4MyUyQyUyMnJlbmRlclRpbWUlMjIlM0E4MjIlN0QlMkMlMjJyZXNvdXJjZXMlMjIlM0ElN0IlMjJudW1iZXIlMjIlM0E2NSUyQyUyMnNpemUlMjIlM0ExMTcwMTYzJTdEJTJDJTIycGFnZSUyMiUzQSUyMm15LmRvbWluaW9zLnB0L2NsaWVudGFyZWEucGhwJTIyJTJDJTIydXNlcl9hZ2VudCUyMiUzQSUyMk1vemlsbGEvNS4wJTIwJTI4V2luZG93cyUyME5UJTIwMTAuMCUzQiUyMFdpbjY0JTNCJTIweDY0JTI5JTIwQXBwbGVXZWJLaXQvNTM3LjM2JTIwJTI4S0hUTUwlMkMlMjBsaWtlJTIwR2Vja28lMjklMjBDaHJvbWUvMTA5LjAuMC4wJTIwU2FmYXJpLzUzNy4zNiUyMiU3RCU3RA==" style="display: none;"></body>
