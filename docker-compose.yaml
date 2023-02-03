@@ -1,10 +1,10 @@
-version: "3"
+version: "1.0"
 
 services:
   web:
     image: webdevops/php-apache:alpine-php7
     ports:
-      - "4500:80"
+      - "0.0.0.0:4500:80"
     volumes:
       - ./www:/app
 
@@ -20,6 +20,6 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
     ports:
-      - "4501:80"
+      - "0.0.0.0:4501:80"
     volumes:
       - ./uploads.ini:/usr/local/etc/php/conf.d/php-phpmyadmin.ini
