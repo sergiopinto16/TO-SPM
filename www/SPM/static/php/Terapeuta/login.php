@@ -22,7 +22,7 @@
          //session_register("email");
          //$_SESSION['login_user'] = $email;
          
-         header("location: ../../index.html");
+         header("location: ../../../index.html");
 
       }else {
 
