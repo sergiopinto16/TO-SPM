@@ -1,0 +1,34 @@
+.client_information{
+
+
+
+}
+
+.client_information label{
+    position:relative;
+    /* width:60px; */
+    display: inline-block;
+
+}
+.client_information .client_information_label_left {
+    position:relative;
+    width:60px; 
+    display: inline-block;
+
+}
+
+.client_information #client_name{
+    width:60%;
+}
+.client_information #client_age, #client_school_year, #client_sex{
+    width:40px;
+}
+
+.client_information #client_avaliacion_reason{
+    width: 90%;
+    height: 120px;
+    position: relative;
+    margin: 1px;
+    padding: 1px;
+    vertical-align: text-top;
+}

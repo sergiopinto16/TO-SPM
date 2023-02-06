@@ -1,0 +1,22 @@
+
+
+ 
+.table_tr{
+    background-color: rgb(192, 194, 192);
+    color: #000;
+}
+.table_tr:nth-child(odd){
+    background-color: rgb(228, 226, 226);
+    color: #000;
+}
+
+.table_tr:first-child{
+    background-color: rgb(44, 44, 44);
+    color: #fff;
+}
+
+.table_td-center {
+    text-align: center;
+}
+
+ 
