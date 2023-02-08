@@ -18,9 +18,13 @@
         <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
         <!-- <script src="static/scripts/charts-spm-casa.js"></script> -->
         <script src="../../static/scripts/spm-casa.js"></script>
+        
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+        
+
         <script type="text/javascript" src="../../static/scripts/jspdf.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
 
 
 
@@ -123,7 +127,7 @@
                 <div class="w3-container w3-padding-32 w3-white" id="spm-casa">
 
                         <div id="participacao_social">
-                                <table>
+                                <table id="table_participacao_social">
                                         <tr>
                                                 <th>Nunca</th>
                                                 <th>Ocasionalmente </th>
@@ -1831,7 +1835,7 @@
 
                 <br>
                 <div id="table_spm-p-casa">
-                        <table style="width:auto">
+                        <table id="table_spm-p-casa_id" style="width:auto">
                                 <tr class="table_tr">
                                         <th>Avaliação</th>
                                         <th>Pontuação </th>
