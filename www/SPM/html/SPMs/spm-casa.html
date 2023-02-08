@@ -18,6 +18,10 @@
         <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
         <!-- <script src="static/scripts/charts-spm-casa.js"></script> -->
         <script src="../../static/scripts/spm-casa.js"></script>
+        <script type="text/javascript" src="../../static/scripts/jspdf.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+
 
 
         <script>
@@ -1891,13 +1895,13 @@
                 
                 <!-- Button EXPORT TO PDF -->
                 <div class="button_export_pdf"> 
-                        <button id="export-button">Export to PDF</button>
+                        <button id="export-button" onclick="downloadPDF()">Export to PDF</button>
         
-                        <script>
+                        <!-- <script>
                                 document.getElementById("export-button").addEventListener("click", function() {
                                         window.open(spm_documentpdf_reference, "_blank");
                                 });
-                        </script>
+                        </script> -->
                         </div>
                         
                         <!-- END BUTTON EXPORT TO PDF -->
