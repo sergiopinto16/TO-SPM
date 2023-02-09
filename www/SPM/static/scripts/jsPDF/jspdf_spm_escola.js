@@ -177,15 +177,15 @@ function downloadPDF() {
     y[6] = y[5]+height_oneline;
     y[7] = y[6]+height_oneline;
     y[8] = y[7]+height_oneline;
-    y[9] = y[8]+height_oneline;
+    y[9] = y[8]+height_twolines;
     y[10] = y[9]+height_oneline;
 
     var y_table2 = y[10]+18.5;
 
     y[11] = y_table2+height_oneline;
-    y[12] = y[11]+height_oneline;
+    y[12] = y[11]+height_twolines;
     y[13] = y[12]+height_oneline;
-    y[14] = y[13]+height_oneline;
+    y[14] = y[13]+height_twolines;
     y[15] = y[14]+height_twolines;
     y[16] = y[15]+height_twolines;
     y[17] = y[16]+height_oneline;
@@ -211,7 +211,7 @@ function downloadPDF() {
     y[31] = y[30]+height_oneline;
     y[32] = y[31]+height_oneline;
 
-    var y_table5 = y[32] + 18.5;
+    var y_table5 = y[32] + 15.5;
 
     
     y[33] = y_table5 + height_oneline;
@@ -219,7 +219,7 @@ function downloadPDF() {
     y[35] = y[34]+height_oneline;
     y[36] = y[35]+height_oneline;
 
-    var y_table6 = 14;
+    var y_table6 = y[36] + 15.5;
 
     y[37] = y_table6+height_oneline;
     y[38] = y[37]+height_oneline;
@@ -229,7 +229,7 @@ function downloadPDF() {
     y[42] = y[41]+height_oneline;
     y[43] = y[42]+height_oneline;
 
-    var y_table7 = y[43] + 15.5;
+    var y_table7 = 14;
 
     
     y[44] = y_table7+height_oneline;
@@ -238,9 +238,9 @@ function downloadPDF() {
     y[47] = y[46]+height_oneline;
     y[48] = y[47]+height_oneline;
     y[49] = y[48]+height_oneline;
-    y[50] = y[49]+height_oneline;
+    y[50] = y[49]+height_twolines;
     y[51] = y[50]+height_oneline;
-    y[52] = y[51]+height_oneline;
+    y[52] = y[51]+height_twolines;
 
     var y_table8 = y[52]+15.3;
 
@@ -773,7 +773,7 @@ function downloadPDF() {
         startX: 20,
         //startY: doc.lastAutoTable.finalY + 10,
         startY: y,
-        html: '#table_spm-p-casa_id',
+        html: '#table_spm-escola_id',
 
         //margin: { top: 37 },
         // tableLineColor: [231, 76, 60],
