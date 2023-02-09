@@ -1421,7 +1421,7 @@ function calc_tscore_total() {
     score_group = 0;
     tscore_group = 0;
 
-    console.log("calc_tscore_total | tscore_total = " + tscore_total);
+    console.log("p escola -> calc_tscore_total | tscore_total = " + tscore_total);
 
     if (tscore_total != 0) {
         if (tscore_total >= 55 && tscore_total <= 59) {

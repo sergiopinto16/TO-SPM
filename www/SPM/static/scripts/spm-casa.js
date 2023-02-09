@@ -3,6 +3,9 @@ var res_array_questions = [];
 var res_array_group = [];
 var res_array_tscore = [];
 var res_array_classificacao = [];
+var chart ;
+
+
 
 for (let i_array = 0; i_array <= 8; i_array++) {
     res_array_group[i_array] = 0;
@@ -1239,7 +1242,7 @@ function calc_tscore_total() {
     score_group = 0;
     tscore_group = 0;
 
-    console.log("calc_tscore_total | tscore_total = " + tscore_total);
+    console.log("casa -> calc_tscore_total | tscore_total = " + tscore_total);
 
     if (tscore_total != 0) {
         if (tscore_total >= 56 && tscore_total <= 58) {
@@ -1462,15 +1465,17 @@ function calc_spm_p() {
 }
 
 
+
 function show_chart() {
     
 
-    var chart = new ej.charts.Chart({
+    chart = new ej.charts.Chart({
         //Initializing Primary X Axis
         primaryXAxis: {
             valueType: 'Category',
             title: 'SPM-p Casa',
         },
+        backgroundColor: "#ffffff",
         //Initializing Primary Y Axis
         // primaryYAxis: {
         //     title: 'T-SCORE'
@@ -1512,8 +1517,26 @@ function show_chart() {
 
     chart.appendTo('#chart_spm-p-casa');
 
-    
-
+    // var dataDef = { title: "US Population Chart",
+    //                         xLabel: 'Year', 
+    //                         yLabel: 'Population (millions)',
+    //                         labelFont: '19pt Arial', 
+    //                         dataPointFont: '10pt Arial',
+    //                         renderTypes: [CanvasChart.renderType.lines, CanvasChart.renderType.points],
+    //                         dataPoints: [{ x: '1790', y: 3.9 }, 
+    //                                      { x: '1810', y: 7.2 }, 
+    //                                      { x: '1830', y: 12.8 }, 
+    //                                      { x: '1850', y: 23.1 },
+    //                                      { x: '1870', y: 36.5 },
+    //                                      { x: '1890', y: 62.9 }, 
+    //                                      { x: '1910', y: 92.2 },
+    //                                      { x: '1930', y: 123.2 },
+    //                                      { x: '1950', y: 151.3 }, 
+    //                                      { x: '1970', y: 203.2 },
+    //                                      { x: '1990', y: 248.7 }, 
+    //                                      { x: '2010', y: 308.7}]
+    //                        };
+    //         CanvasChart.render('chart_spm-p-casa', dataDef);
 
 }
 

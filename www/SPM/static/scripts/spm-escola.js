@@ -651,7 +651,7 @@ function calc_gosto_e_olfato() {
 
 
     let indexquestion_start = 33;
-    let indexquestion_end = 43;
+    let indexquestion_end = 36;
 
     let res_group = 0;
 
@@ -668,7 +668,10 @@ function calc_gosto_e_olfato() {
             }
         }
         res_array_questions[i_var] = res_question;
-        if (res_question == null) exist_one_question_null = true;
+        if (res_question == null){
+             exist_one_question_null = true;
+             console.log("Question null + " + i_var);
+        }
         res_group += parseInt(parseInt(res_question))
 
     }
@@ -682,6 +685,7 @@ function calc_gosto_e_olfato() {
 
 
     document.getElementById(res_group_name).innerHTML = res_group;
+    
     //document.getElementById(score_group_name).innerHTML = score_group;
     //document.getElementById(tscore_group_name).innerHTML = tscore_group;
 
@@ -711,8 +715,8 @@ function calc_consciencia_corporal() {
     tscore_group_name = "tscore_consciencia_corporal"
     classificacao_group_name = "classificacao_consciencia_corporal"
 
-    let indexquestion_start = 44;
-    let indexquestion_end = 52;
+    let indexquestion_start = 37;
+    let indexquestion_end = 43;
 
     let res_group = 0;
 
@@ -855,8 +859,8 @@ function calc_movimento_e_equilibrio() {
     classificacao_group_name = "classificacao_movimento_e_equilibrio"
 
 
-    let indexquestion_start = 53;
-    let indexquestion_end = 62;
+    let indexquestion_start = 44;
+    let indexquestion_end = 52;
 
     let res_group = 0;
 
@@ -1009,8 +1013,8 @@ function calc_planeamento_motor_e_ideacao() {
     tscore_group_name = "tscore_planeamento_motor_e_ideacao"
     classificacao_group_name = "classificacao_planeamento_motor_e_ideacao"
 
-    let indexquestion_start = 67;
-    let indexquestion_end = 75;
+    let indexquestion_start = 53;
+    let indexquestion_end = 62;
 
     let res_group = 0;
 
@@ -1184,7 +1188,7 @@ function calc_tscore_total() {
     score_group = 0;
     tscore_group = 0;
 
-    console.log("calc_tscore_total | tscore_total = " + tscore_total);
+    console.log("escola -> calc_tscore_total  | tscore_total = " + tscore_total);
 
     if (tscore_total != 0) {
         if (tscore_total >= 42 && tscore_total <= 43) {
@@ -1355,6 +1359,8 @@ function calc_tscore_total() {
 function calc_spm_p() {
 
     tscore_total = 0;
+
+    console.log("Calc spm-escola.js");
 
     //res_participacao_social
     calc_participacao_social();

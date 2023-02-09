@@ -3,7 +3,7 @@
   }
 
 tr:nth-child(odd){
-    background-color: #eef3ad;
+    background-color: rgb(238, 243, 173);
     color: #000;
 }
 

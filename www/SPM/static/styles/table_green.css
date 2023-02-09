@@ -4,7 +4,7 @@ td{
   }
 
 tr:nth-child(odd){
-    background-color: #b5f3ad;
+    background-color: rgb(181, 243, 173);
     color: #000;
 }
 
