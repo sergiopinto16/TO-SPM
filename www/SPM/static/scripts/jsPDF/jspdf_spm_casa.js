@@ -44,6 +44,35 @@ const addHeaders = doc => {
 
 function downloadPDF() {
 
+    var jsonString_res_array_questions = JSON.stringify(res_array_questions);
+    console.log(jsonString_res_array_questions);
+    var jsonString_res_array_group = JSON.stringify(res_array_group);
+    console.log(jsonString_res_array_group);
+    var jsonString_res_array_score = JSON.stringify(res_array_score);
+    console.log(jsonString_res_array_score);
+    var jsonString_res_array_classificacao_int = JSON.stringify(res_array_classificacao_int);
+    console.log(jsonString_res_array_classificacao_int);
+    // console.log(res_array_questions[0]);
+    //console.log(jsonString);
+    // console.log(jsonString);
+
+
+    $.ajax({
+        type: 'POST',
+        url: '../../static/php/SPMs/addSPM.php',
+        data: { jsonString_res_array_questions: jsonString_res_array_questions, 
+                jsonString_res_array_group:jsonString_res_array_group,
+                jsonString_res_array_score:jsonString_res_array_score,
+                jsonString_res_array_classificacao_int:jsonString_res_array_classificacao_int,
+                avaliation_date : document.getElementById("client_date_of_avaliation").value,
+                avaliation_reason :  document.getElementById("client_avaliacion_reason").value,
+                spm_type :0},
+        success: function(response) {
+            console.log("sucess!");
+            console.log(response);
+        }
+      });
+
 
     var doc = new jsPDF("p", "mm", "a4");
 
