@@ -163,6 +163,7 @@ function downloadPDF() {
     
     var height_oneline = 5.23;
     var height_twolines = 8.5;
+    var height_trheelines = 11.7;
     var height_text = height_oneline/2.0;
     
 
@@ -171,87 +172,88 @@ function downloadPDF() {
 
     y[1] = y_before+20+height_oneline;
     y[2] = y[1]+height_oneline;
-    y[3] = y[2]+height_twolines;
+    y[3] = y[2]+height_oneline;
     y[4] = y[3]+height_oneline;
     y[5] = y[4]+height_oneline;
-    y[6] = y[5]+height_oneline;
-    y[7] = y[6]+height_oneline;
-    y[8] = y[7]+height_oneline;
-    y[9] = y[8]+height_twolines;
+    y[6] = y[5]+height_twolines;
+    y[7] = y[6]+height_twolines;
+    y[8] = y[7]+height_twolines;
+
+    var y_table2 = y[8]+18.5;
+
+    y[9] = y_table2+height_oneline;
     y[10] = y[9]+height_twolines;
-
-    var y_table2 = y[10]+18.5;
-
-    y[11] = y_table2+height_oneline;
+    y[11] = y[10]+height_oneline;
     y[12] = y[11]+height_twolines;
-    y[13] = y[12]+height_oneline;
-    y[14] = y[13]+height_twolines;
-    y[15] = y[14]+height_twolines;
-    y[16] = y[15]+height_twolines;
+    y[13] = y[12]+height_twolines;
+    y[14] = y[13]+height_oneline;
+    y[15] = y[14]+height_oneline;
+    y[16] = y[15]+height_oneline;
     y[17] = y[16]+height_twolines;
     y[18] = y[17]+height_twolines;
     y[19] = y[18]+height_oneline;
-    y[20] = y[19]+height_oneline;
+
+    var y_table3 = 14;
+
+    y[20] = y_table3+height_oneline;
     y[21] = y[20]+height_twolines;
-
-    var y_table2 = 14;
-
-    y[22] = y_table2+height_oneline;
-    y[23] = y[22] + height_twolines;
+    y[22] = y[21]+height_twolines;
+    y[23] = y[22] + height_oneline;
     y[24] = y[23] + height_twolines;
-    y[25] = y[24]+height_oneline;
+    y[25] = y[24]+height_twolines;
     y[26] = y[25]+height_twolines;
     y[27] = y[26]+height_twolines;
-    y[28] = y[27]+height_twolines;
-    y[29] = y[28]+height_oneline;
+    y[28] = y[27]+height_oneline;
 
-    var y_table4 = y[29] +  18.5;
+    var y_table4 = y[28] +  15.3;
 
-    y[30] = y_table4+height_oneline;
+    y[29] = y_table4+height_oneline;
+    y[30] = y[29]+height_oneline;
     y[31] = y[30]+height_oneline;
     y[32] = y[31]+height_oneline;
     y[33] = y[32] + height_oneline;
-    y[34] = y[33]+height_oneline;
+    y[34] = y[33]+height_twolines;
     y[35] = y[34]+height_oneline;
-    y[36] = y[35]+height_oneline;
+    y[36] = y[35]+height_twolines;
     y[37] = y[36]+height_twolines;
-    y[38] = y[37]+height_twolines;
+    y[38] = y[37]+height_oneline;
     y[39] = y[38]+height_oneline;
-    y[40] = y[39]+height_twolines;
-
-    var y_table5 = y[40] + 18.5;
-
-    y[41] = y_table5+height_oneline;
+    y[40] = y[39]+height_oneline;
+    y[41] = y[40]+height_oneline;
     y[42] = y[41]+height_oneline;
-    y[43] = y[42]+height_twolines;
+
+    var y_table5 = y[42] + 15.3;
+
+    
+    y[43] = y_table5+height_oneline;
     y[44] = y[43]+height_oneline;
     y[45] = y[44]+height_oneline;
+    y[46] = y[45]+height_oneline;
 
     var y_table6 = 14;
 
-    y[46] = y_table6+height_oneline;
-    y[47] = y[46]+height_oneline;
-    y[48] = y[47]+height_oneline;
+    y[47] = y_table6+height_oneline;
+    y[48] = y[47]+height_twolines;
     y[49] = y[48]+height_twolines;
-    y[50] = y[49]+height_oneline;
+    y[50] = y[49]+height_twolines;
     y[51] = y[50]+height_twolines;
-    y[52] = y[51]+height_oneline;
+    y[52] = y[51]+height_twolines;
     y[53] = y[52]+height_oneline;
     y[54] = y[53]+height_oneline;
     y[55] = y[54]+height_oneline;
 
-    var y_table7 = y[55] + 15.5;
+    var y_table7 = y[55] + 18.5;
 
     y[56] = y_table7+height_oneline;
     y[57] = y[56]+height_twolines;
-    y[58] = y[57]+height_oneline;
+    y[58] = y[57]+height_twolines;
     y[59] = y[58]+height_twolines;
     y[60] = y[59]+height_oneline;
     y[61] = y[60]+height_oneline;
     y[62] = y[61]+height_oneline;
     y[63] = y[62]+height_oneline;
-    y[64] = y[63]+height_twolines;
-    y[65] = y[64]+height_oneline;
+    y[64] = y[63]+height_oneline;
+    y[65] = y[64]+height_twolines;
     y[66] = y[65]+height_oneline;
 
     var y_table8 = y[66]+15.3;
@@ -259,12 +261,12 @@ function downloadPDF() {
     y[67] = y_table8+height_oneline;
     y[68] = y[67]+height_oneline;
     y[69] = y[68]+height_oneline;
-    y[70] = y[69]+height_twolines;
-    y[71] = y[70]+height_twolines;
-    y[72] = y[71]+height_oneline;
-    y[73] = y[72]+height_twolines;
+    y[70] = y[69]+height_trheelines;
+    y[71] = y[70]+height_oneline;
+    y[72] = y[71]+height_twolines;
+    y[73] = y[72]+height_oneline;
     y[74] = y[73]+height_oneline;
-    y[75] = y[74]+height_oneline;
+    y[75] = y[74]+height_twolines;
     
     var x = [0,19.1,35.3,57.6,75];
 
@@ -276,7 +278,7 @@ function downloadPDF() {
         startX: 20,
         startY: doc.lastAutoTable.finalY + 10,
 
-        html: '#spm_casa_table_participacao_social',
+        html: '#spm_p_casa_table_participacao_social',
 
         //margin: { top: 37 },
         // tableLineColor: [231, 76, 60],
@@ -333,7 +335,7 @@ function downloadPDF() {
     doc.autoTable({
         startX: 20,
         startY: doc.lastAutoTable.finalY + 10,
-        html: '#spm_casa_table_visao',
+        html: '#spm_p_casa_table_visao',
 
         //margin: { top: 37 },
         // tableLineColor: [231, 76, 60],
@@ -384,7 +386,7 @@ function downloadPDF() {
     doc.autoTable({
         startX: 20,
         startY: doc.lastAutoTable.finalY + 10,
-        html: '#spm_casa_table_audicao',
+        html: '#spm_p_casa_table_audicao',
 
         //margin: { top: 37 },
         // tableLineColor: [231, 76, 60],
@@ -435,7 +437,7 @@ function downloadPDF() {
     doc.autoTable({
         startX: 20,
         startY: doc.lastAutoTable.finalY + 10,
-        html: '#spm_casa_table_toque',
+        html: '#spm_p_casa_table_toque',
 
         //margin: { top: 37 },
         // tableLineColor: [231, 76, 60],
@@ -489,7 +491,7 @@ function downloadPDF() {
     doc.autoTable({
         startX: 20,
         startY: doc.lastAutoTable.finalY + 10,
-        html: '#spm_casa_table_gosto_e_olfato',
+        html: '#spm_p_casa_table_gosto_e_olfato',
 
         //margin: { top: 37 },
         // tableLineColor: [231, 76, 60],
@@ -540,7 +542,7 @@ function downloadPDF() {
     doc.autoTable({
         startX: 20,
         startY: doc.lastAutoTable.finalY + 10,
-        html: '#spm_casa_table_consciencia_corporal',
+        html: '#spm_p_casa_table_consciencia_corporal',
 
         //margin: { top: 37 },
         // tableLineColor: [231, 76, 60],
@@ -592,7 +594,7 @@ function downloadPDF() {
     doc.autoTable({
         startX: 20,
         startY: doc.lastAutoTable.finalY + 10,
-        html: '#spm_casa_table_movimento_e_equilibrio',
+        html: '#spm_p_casa_table_movimento_e_equilibrio',
 
         //margin: { top: 37 },
         // tableLineColor: [231, 76, 60],
@@ -644,7 +646,7 @@ function downloadPDF() {
     doc.autoTable({
         startX: 20,
         startY: doc.lastAutoTable.finalY + 10,
-        html: '#spm_casa_table_planeamento_motor_e_ideacao',
+        html: '#spm_p_casa_table_planeamento_motor_e_ideacao',
 
         //margin: { top: 37 },
         // tableLineColor: [231, 76, 60],
@@ -700,15 +702,15 @@ function downloadPDF() {
         if(i==1){
             doc.setPage(table_page[1]);
         }
-        else if(i==11){
+        else if(i==9){
             doc.setPage(table_page[2]);
-        }else if(i==22){
+        }else if(i==20){
             doc.setPage(table_page[3]);
-        }else if(i==30){
+        }else if(i==29){
             doc.setPage(table_page[4]);
-        }else if(i==41){
+        }else if(i==43){
             doc.setPage(table_page[5]);
-        }else if(i==46){
+        }else if(i==47){
             doc.setPage(table_page[6]);
         }else if(i==56){
             doc.setPage(table_page[7]);
@@ -719,7 +721,7 @@ function downloadPDF() {
 
         var x_aux = 0;
         if(res_array_questions[i]!=null){
-            if(i<=10){
+            if(i<=8){
                 //Invert because first questions have opossite values
                 x_aux = x[ 5 - parseInt(res_array_questions[i])];
             }
