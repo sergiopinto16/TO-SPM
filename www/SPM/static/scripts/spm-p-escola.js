@@ -1,11 +1,14 @@
 
 var res_array_questions = [];
 var res_array_group = [];
-var res_array_tscore = [];
+var res_array_score = [];
 var res_array_classificacao = [];
+var res_array_classificacao_int = [];
 
 for (let i_array = 0; i_array <= 8; i_array++) {
     res_array_group[i_array] = 0;
+    res_array_score[i_array] = 0;
+    res_array_classificacao_int[i_array] = 0;
 }
 
 
@@ -199,24 +202,23 @@ function calc_participacao_social() {
 
 
 
-    document.getElementById(res_group_name).innerHTML = res_group;
-    document.getElementById(score_group_name).innerHTML = score_group;
-    document.getElementById(tscore_group_name).innerHTML = tscore_group;
-
-
     classificacao_group = "";
+    classificacao_group_int = 0;
     if (res_group != 0) {
         classificacao_group = classificacao_nivel_01;
-        if (tscore_group >= 60 && tscore_group <= 69) classificacao_group = classificacao_nivel_02;
-        else if (tscore_group > 70) classificacao_group = classificacao_nivel_03;
+        classificacao_group_int =1;
+        if (tscore_group >= 60 && tscore_group <= 69){ classificacao_group = classificacao_nivel_02;
+            classificacao_group_int = 2;}
+        else if (tscore_group > 70){ classificacao_group = classificacao_nivel_03;classificacao_group_int=3;}
     }
 
     document.getElementById(classificacao_group_name).innerHTML = classificacao_group;
 
     res_array_group[0] = tscore_group;
+    res_array_score[0] = score_group;
     res_array_classificacao[0] = classificacao_group;
+    res_array_classificacao_int[0] = classificacao_group_int;
     tscore_total += parseInt(tscore_group);
-
 
 }
 
@@ -395,16 +397,21 @@ function calc_visao() {
 
 
     classificacao_group = "";
+    classificacao_group_int = 0;
     if (res_group != 0) {
         classificacao_group = classificacao_nivel_01;
-        if (tscore_group >= 60 && tscore_group <= 69) classificacao_group = classificacao_nivel_02;
-        else if (tscore_group > 70) classificacao_group = classificacao_nivel_03;
+        classificacao_group_int =1;
+        if (tscore_group >= 60 && tscore_group <= 69){ classificacao_group = classificacao_nivel_02;
+            classificacao_group_int = 2;}
+        else if (tscore_group > 70){ classificacao_group = classificacao_nivel_03;classificacao_group_int=3;}
     }
 
     document.getElementById(classificacao_group_name).innerHTML = classificacao_group;
 
     res_array_group[1] = tscore_group;
+    res_array_score[1] = score_group;
     res_array_classificacao[1] = classificacao_group;
+    res_array_classificacao_int[1] = classificacao_group_int;
     tscore_total += parseInt(tscore_group);
 }
 
@@ -581,18 +588,21 @@ function calc_audicao() {
 
 
     classificacao_group = "";
+    classificacao_group_int = 0;
     if (res_group != 0) {
         classificacao_group = classificacao_nivel_01;
-        if (tscore_group >= 60 && tscore_group <= 69) classificacao_group = classificacao_nivel_02;
-        else if (tscore_group > 70) classificacao_group = classificacao_nivel_03;
+        classificacao_group_int =1;
+        if (tscore_group >= 60 && tscore_group <= 69){ classificacao_group = classificacao_nivel_02;
+            classificacao_group_int = 2;}
+        else if (tscore_group > 70){ classificacao_group = classificacao_nivel_03;classificacao_group_int=3;}
     }
-
 
     document.getElementById(classificacao_group_name).innerHTML = classificacao_group;
 
     res_array_group[2] = tscore_group;
+    res_array_score[2] = score_group;
     res_array_classificacao[2] = classificacao_group;
-
+    res_array_classificacao_int[2] = classificacao_group_int;
     tscore_total += parseInt(tscore_group);
 
 }
@@ -770,20 +780,22 @@ function calc_toque() {
 
 
     classificacao_group = "";
+    classificacao_group_int = 0;
     if (res_group != 0) {
         classificacao_group = classificacao_nivel_01;
-        if (tscore_group >= 60 && tscore_group <= 69) classificacao_group = classificacao_nivel_02;
-        else if (tscore_group > 70) classificacao_group = classificacao_nivel_03;
+        classificacao_group_int =1;
+        if (tscore_group >= 60 && tscore_group <= 69){ classificacao_group = classificacao_nivel_02;
+            classificacao_group_int = 2;}
+        else if (tscore_group > 70){ classificacao_group = classificacao_nivel_03;classificacao_group_int=3;}
     }
-
 
     document.getElementById(classificacao_group_name).innerHTML = classificacao_group;
 
     res_array_group[3] = tscore_group;
+    res_array_score[3] = score_group;
     res_array_classificacao[3] = classificacao_group;
-
+    res_array_classificacao_int[3] = classificacao_group_int;
     tscore_total += parseInt(tscore_group);
-
 }
 
 
@@ -832,20 +844,22 @@ function calc_gosto_e_olfato() {
     //document.getElementById(tscore_group_name).innerHTML = tscore_group;
 
     classificacao_group = "";
+    classificacao_group_int = 0;
     if (res_group != 0) {
         classificacao_group = classificacao_nivel_01;
-        if (tscore_group >= 60 && tscore_group <= 69) classificacao_group = classificacao_nivel_02;
-        else if (tscore_group > 70) classificacao_group = classificacao_nivel_03;
+        classificacao_group_int =1;
+        if (tscore_group >= 60 && tscore_group <= 69){ classificacao_group = classificacao_nivel_02;
+            classificacao_group_int = 2;}
+        else if (tscore_group > 70){ classificacao_group = classificacao_nivel_03;classificacao_group_int=3;}
     }
-
 
     //document.getElementById(classificacao_group_name).innerHTML = classificacao_group;
 
     res_array_group[4] = tscore_group;
+    res_array_score[4] = score_group;
     res_array_classificacao[4] = classificacao_group;
-
+    res_array_classificacao_int[4] = classificacao_group_int;
     tscore_total += parseInt(tscore_group);
-
 
 }
 
@@ -1023,19 +1037,21 @@ function calc_consciencia_corporal() {
 
 
     classificacao_group = "";
+    classificacao_group_int = 0;
     if (res_group != 0) {
         classificacao_group = classificacao_nivel_01;
-        if (tscore_group >= 60 && tscore_group <= 69) classificacao_group = classificacao_nivel_02;
-        else if (tscore_group > 70) classificacao_group = classificacao_nivel_03;
+        classificacao_group_int =1;
+        if (tscore_group >= 60 && tscore_group <= 69){ classificacao_group = classificacao_nivel_02;
+            classificacao_group_int = 2;}
+        else if (tscore_group > 70){ classificacao_group = classificacao_nivel_03;classificacao_group_int=3;}
     }
 
     document.getElementById(classificacao_group_name).innerHTML = classificacao_group;
 
-
     res_array_group[5] = tscore_group;
+    res_array_score[5] = score_group;
     res_array_classificacao[5] = classificacao_group;
-
-
+    res_array_classificacao_int[5] = classificacao_group_int;
     tscore_total += parseInt(tscore_group);
 
 }
@@ -1212,17 +1228,21 @@ function calc_movimento_e_equilibrio() {
     document.getElementById(tscore_group_name).innerHTML = tscore_group;
 
     classificacao_group = "";
+    classificacao_group_int = 0;
     if (res_group != 0) {
         classificacao_group = classificacao_nivel_01;
-        if (tscore_group >= 60 && tscore_group <= 69) classificacao_group = classificacao_nivel_02;
-        else if (tscore_group > 70) classificacao_group = classificacao_nivel_03;
+        classificacao_group_int =1;
+        if (tscore_group >= 60 && tscore_group <= 69){ classificacao_group = classificacao_nivel_02;
+            classificacao_group_int = 2;}
+        else if (tscore_group > 70){ classificacao_group = classificacao_nivel_03;classificacao_group_int=3;}
     }
 
     document.getElementById(classificacao_group_name).innerHTML = classificacao_group;
 
     res_array_group[6] = tscore_group;
+    res_array_score[6] = score_group;
     res_array_classificacao[6] = classificacao_group;
-
+    res_array_classificacao_int[6] = classificacao_group_int;
     tscore_total += parseInt(tscore_group);
 
 }
@@ -1399,19 +1419,21 @@ function calc_planeamento_motor_e_ideacao() {
 
 
     classificacao_group = "";
+    classificacao_group_int = 0;
     if (res_group != 0) {
         classificacao_group = classificacao_nivel_01;
-        if (tscore_group >= 60 && tscore_group <= 69) classificacao_group = classificacao_nivel_02;
-        else if (tscore_group > 70) classificacao_group = classificacao_nivel_03;
+        classificacao_group_int =1;
+        if (tscore_group >= 60 && tscore_group <= 69){ classificacao_group = classificacao_nivel_02;
+            classificacao_group_int = 2;}
+        else if (tscore_group > 70){ classificacao_group = classificacao_nivel_03;classificacao_group_int=3;}
     }
-
 
     document.getElementById(classificacao_group_name).innerHTML = classificacao_group;
 
     res_array_group[7] = tscore_group;
+    res_array_score[7] = score_group;
     res_array_classificacao[7] = classificacao_group;
-
-
+    res_array_classificacao_int[7] = classificacao_group_int;
     tscore_total += parseInt(tscore_group);
 
 }
@@ -1591,15 +1613,19 @@ function calc_tscore_total() {
     document.getElementById('tscore_total').innerHTML = tscore_total;
 
     classificacao_group = "";
-    if (tscore_group >= 40 && tscore_group <= 59) classificacao_group = classificacao_nivel_01;
-    if (tscore_group >= 60 && tscore_group <= 69) classificacao_group = classificacao_nivel_02;
-    else if (tscore_group > 70) classificacao_group = classificacao_nivel_03;
+    classificacao_group_int = 0;
+    if (tscore_group >= 40 && tscore_group <= 59){ classificacao_group = classificacao_nivel_01; classificacao_group_int = 1;}
+    if (tscore_group >= 60 && tscore_group <= 69){ classificacao_group = classificacao_nivel_02;
+        classificacao_group_int = 2;}
+    else if (tscore_group > 70){ classificacao_group = classificacao_nivel_03;classificacao_group_int=3;}
 
 
     document.getElementById('classificacao_total').innerHTML = classificacao_group;
 
     res_array_group[8] = tscore_group;
+    res_array_score[8] = score_group;
     res_array_classificacao[8] = classificacao_group;
+    res_array_classificacao_int[8] = classificacao_group_int;
 
 
 
