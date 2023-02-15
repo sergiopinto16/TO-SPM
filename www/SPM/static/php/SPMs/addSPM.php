@@ -1,8 +1,11 @@
 <?php
+ini_set('display_errors', 1);
 
+print("0.0");
     session_start();
     include('spm.php');
 
+    print("0.1");
     $spm = new SPM();
 
     
@@ -29,7 +32,7 @@
 
     $i = 0;
     $ignore_first_arg = true;
-    $res_array_questions = array_fill(0;75;0);
+    $res_array_questions = array_fill(0,75,0);
     foreach($jsonString_res_array_questions as $value){
         if(!$ignore_first_arg){
             if($value==null) $res_array_questions[$i]=0;
@@ -41,7 +44,7 @@
     print_r($res_array_questions);
     
     $i = 0;
-    $res_array_tscore = array_fill(0;8;0);
+    $res_array_tscore = array_fill(0,8,0);
     foreach($jsonString_res_array_group as $value){
             if($value==null) $res_array_tscore[$i]=0;
             else $res_array_tscore[$i]=$value;
@@ -52,7 +55,7 @@
 
 
     $i = 0;
-    $res_array_score = array_fill(0;8;0);
+    $res_array_score = array_fill(0,8,0);
     foreach($jsonString_res_array_score as $value){
             if($value==null) $res_array_score[$i]=0;
             else $res_array_score[$i]=$value;
@@ -63,7 +66,7 @@
 
 
     $i = 0;
-    $res_array_classificacao_int = array_fill(0;8;0);
+    $res_array_classificacao_int = array_fill(0,8,0);
     foreach($jsonString_res_array_classificacao_int as $value){
             if($value==null) $res_array_classificacao_int[$i]=0;
             else $res_array_classificacao_int[$i]=$value;
@@ -71,7 +74,9 @@
         
     }
     print_r($res_array_classificacao_int);
-    
+    print($avaliation_date);
+    print($avaliation_reason);
+    print($spm_type );
     
     $spm->check_table_spms();
 

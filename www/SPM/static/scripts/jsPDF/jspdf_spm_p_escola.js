@@ -44,6 +44,25 @@ const addHeaders = doc => {
 
 function downloadPDF() {
 
+    for(let i_array =1;i_array<=75;i_array++){
+        if(res_array_questions[i_array]==null || res_array_questions[i_array] ==0){
+            alert("Necessário selecionar resposta a todas as questões!");
+            return;
+        }
+    }
+    if(document.getElementById("client_date_of_avaliation").value==null || document.getElementById("client_date_of_avaliation").value==""){
+        alert("Necessário preencher o campo DATA da avaliação!");
+        return;
+    }
+    if(document.getElementById("client_avaliacion_reason").value==null || document.getElementById("client_avaliacion_reason").value==""){
+        alert("Necessário preencher o campo MOTIVO da avaliação!");
+        return;
+    }
+    if(document.getElementById("client_name").value==null || document.getElementById("client_name").value==""){
+        alert("Necessário preencher o campo NOME do utente!");
+        return;
+    }
+    
 
     var jsonString_res_array_questions = JSON.stringify(res_array_questions);
     console.log(jsonString_res_array_questions);

@@ -1602,7 +1602,8 @@ function calc_tscore_total() {
             tscore_group = 79;
             score_group = 99;
         }
-        else if (tscore_total >= 199 && tscore_total <= 220) {
+        //else if (tscore_total >= 199 && tscore_total <= 220) {
+        else if (tscore_total >= 199) {
             tscore_group = 80;
             score_group = 99;
         }

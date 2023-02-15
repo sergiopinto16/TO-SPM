@@ -3,9 +3,13 @@ var res_array_questions = [];
 var res_array_group = [];
 var res_array_score = [];
 var res_array_classificacao = [];
+var res_array_classificacao_int = [];
 
 for (let i_array = 0; i_array <= 8; i_array++) {
     res_array_group[i_array] = 0;
+    res_array_score[i_array] = 0;
+    
+    res_array_classificacao_int[i_array] = 0;
 }
 
 
