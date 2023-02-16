@@ -4,7 +4,7 @@ services:
   web:
     image: webdevops/php-apache:alpine-php7
     ports:
-      - "0.0.0.0:4500:80"
+      - "0.0.0.0:80:80"
     volumes:
       - ./www:/app
 

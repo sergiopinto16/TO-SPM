@@ -14,6 +14,21 @@ class Account{
 
     public function check_table_terapeuta(){        
         
+
+        /*
+        UTENTE
+        -> nome
+        -> Ano Nascimento
+        -> Sexo
+        -> FOTO ????
+        -> Educador Nome
+        -> Educador Ano Nascimento (???)
+        -> Educador Grau Parentesco
+        -> Educador Contacto
+        -> Educador email
+
+        -> Terapeuta (necessário login para adcionar utente)
+        */
         
         $query = "CREATE TABLE IF NOT EXISTS utente (
             id int(11) AUTO_INCREMENT,

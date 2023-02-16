@@ -363,6 +363,7 @@ function downloadPDF() {
             1: { halign: 'center' },
             2: { halign: 'center' },
             3: { halign: 'center' },
+            4:{cellWidth: 115},
             //     // 0: { fillColor: [41, 128, 185], textColor: 255, fontStyle: 'bold' }, 
         },
         pageBreak: 'avoid',
@@ -420,6 +421,7 @@ function downloadPDF() {
             1: { halign: 'center' },
             2: { halign: 'center' },
             3: { halign: 'center' },
+            4:{cellWidth: 115},
             //     // 0: { fillColor: [41, 128, 185], textColor: 255, fontStyle: 'bold' }, 
         },
 
@@ -471,6 +473,7 @@ function downloadPDF() {
             1: { halign: 'center' },
             2: { halign: 'center' },
             3: { halign: 'center' },
+            4:{cellWidth: 115},
             //     // 0: { fillColor: [41, 128, 185], textColor: 255, fontStyle: 'bold' }, 
         },
 
@@ -522,6 +525,7 @@ function downloadPDF() {
             1: { halign: 'center' },
             2: { halign: 'center' },
             3: { halign: 'center' },
+            4:{cellWidth: 115},
             //     // 0: { fillColor: [41, 128, 185], textColor: 255, fontStyle: 'bold' }, 
         },
 
@@ -576,6 +580,7 @@ function downloadPDF() {
             1: { halign: 'center' },
             2: { halign: 'center' },
             3: { halign: 'center' },
+            4:{cellWidth: 115},
             //     // 0: { fillColor: [41, 128, 185], textColor: 255, fontStyle: 'bold' }, 
         },
 
@@ -627,6 +632,7 @@ function downloadPDF() {
             1: { halign: 'center' },
             2: { halign: 'center' },
             3: { halign: 'center' },
+            4:{cellWidth: 115},
             //     // 0: { fillColor: [41, 128, 185], textColor: 255, fontStyle: 'bold' }, 
         },
 
@@ -679,6 +685,7 @@ function downloadPDF() {
             1: { halign: 'center' },
             2: { halign: 'center' },
             3: { halign: 'center' },
+            4:{cellWidth: 115},
             //     // 0: { fillColor: [41, 128, 185], textColor: 255, fontStyle: 'bold' }, 
         },
 
@@ -731,6 +738,7 @@ function downloadPDF() {
             1: { halign: 'center' },
             2: { halign: 'center' },
             3: { halign: 'center' },
+            4:{cellWidth: 115},
             //     // 0: { fillColor: [41, 128, 185], textColor: 255, fontStyle: 'bold' }, 
         },
 

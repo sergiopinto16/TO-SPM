@@ -1,2 +1,5 @@
 <?php
-    phpinfo();
+    //phpinfo();
+    $newURL = "/SPM";
+    header('Location: '.$newURL);
+    die();

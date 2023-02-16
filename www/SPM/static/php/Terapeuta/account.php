@@ -14,7 +14,20 @@ class Account{
 
     public function check_table_terapeuta(){        
         
-        
+
+        /*
+        TERAPEUTA
+        -> Nome
+        -> Email
+        -> password
+        -> Contacto (???)
+        -> Região
+        -> Ano Nascimento
+        -> Nível Plataforma (0-> Terapeuta , 1->ADMIN)
+        */
+
+
+
         $query = "CREATE TABLE IF NOT EXISTS terapeuta (
             id int(11) AUTO_INCREMENT,
             EMAIL varchar(255) NOT NULL,
