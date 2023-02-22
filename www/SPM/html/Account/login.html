@@ -47,7 +47,7 @@
         </div>
         <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
             class="fa fa-search"></i></a>
-        <a href="login.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">LOGIN</a>
+        <a href="login.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right" id="header-login">LOGIN</a>
       </div>
     </div>
   
@@ -62,14 +62,15 @@
   
   
     <!-- Page content -->
-    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+    <div class="w3-content" style="max-width:2000px;margin-top:100px">
   
       
         
         <!-- partial:index.partial.html -->
         <div id="login-form-wrap">
             <h2>Login</h2>
-            <form method="post" action="../../static/php/Terapeuta/login.php" id="login-form">
+            <!-- <form method="post" action="../../static/php/Terapeuta/login.php" id="login-form"> -->
+              <form method='post' id="login-form">
                 <p>
                     <input type="email" id="email" name="email" placeholder="Email Address" required><i
                         class="validation"><span></span><span></span></i>
@@ -80,7 +81,9 @@
                 </p>
                 
                 <p>
-                    <input type="submit" id="login" value="Login">
+                    <!-- <input type="submit" id="login" value="Login" onclick="Login()"> -->
+                    <input type="button" id="login" value="Login" onclick="Login()">
+
                 </p>
             </form>
             <div id="create-account-wrap">

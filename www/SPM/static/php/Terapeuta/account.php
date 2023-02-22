@@ -66,8 +66,25 @@ class Account{
 
     public function login_terapeuta(string $email, string $password){
         
-        $sql = "SELECT id FROM terapeuta WHERE email = '$email' and password = '$password'";
-        $query = $this->dbconn->connection->query($sql);
+        $sql = "SELECT count(*) FROM terapeuta WHERE email = '$email' and password = '$password'";
+        // $query = "SELECT count(*) FROM terapeuta WHERE email = :email and password = :password"; 
+        // $query_params = array( ':email' => $email,':password'=> $password); 
+
+
+        // echo $sql;
+        // print_r($query_params);
+        $result = $this->dbconn->connection->query($sql);
+        // $stmt = $this->dbconn->connection->prepare($query);
+        // $result = $stmt->execute($query_params); 
+
+        print_r($result);
+        foreach($result as $row){
+            print_r($row);
+            print($row['count(*)']);
+            if($row['count(*)']==1) return 1;
+        }
+
+        // $rows = $query->fetchAll();
         /*
         if($query->num_rows > 0){
             $row = $query->fetch_array();
@@ -76,12 +93,19 @@ class Account{
         else{
             return false;
         }
-        */
+        // */
+        // foreach($rows as $row) {
+        
+        //     echo $row;
+        // }
 
-
-        $count = mysqli_num_rows($query);
+        // die();
+        // if($result[0]==0) echo "Is null0";
+        
+        // $count = mysqli_num_rows($query);
       
-        return $count;
+        // return $count;
+        return 0;
 
 
     }
