@@ -11,6 +11,7 @@
     //$password = mysqli_real_escape_string($db,$_POST['password']); 
     $email = $_POST['email'];
     $password = $_POST['password']; 
+    $username = $_POST['username'];
 
 
     
@@ -21,7 +22,7 @@
     echo "Execute query";
 
 
-    $account->add_new_terapeuta($email,$password);
+    $account->add_new_terapeuta($email,$password,$username);
 
     
 ?>

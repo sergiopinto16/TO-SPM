@@ -8,9 +8,12 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/styles/header.css">
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="static/scripts/header.js"></script>
+  <script type="text/javascript" src="static/scripts/login.js"></script>
 
   <script>
     $(function () {
@@ -41,9 +44,21 @@
           <a href="html/SPMs/spm-p-escola.html" class="w3-bar-item w3-button">SPM-p ESCOLA</a>
         </div>
       </div>
+      <a href="html/Dashboard/dashboard.html"><input type="button" class="w3-bar-item w3-button w3-padding-large w3-hide-small" value="DASHBOARD" id="header_dashboard" /></a>
+      
+
       <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
           class="fa fa-search"></i></a>
-      <a href="html/Account/login.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">LOGIN</a>
+     
+         
+          <!-- <a href="html/Account/login.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">LOGIN</a> -->
+        <input type="button" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right" value="USER" id="header_user" onclick="Logout()" />
+        <input type="button" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right" value="LOGOUT" id="header_logout" onclick="Logout()"/>
+        
+          <a href="html/Account/login.html"><input type="button" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right" value="LOGIN" id="header_login" /></a>
+        
+
+
     </div>
   </div>
 

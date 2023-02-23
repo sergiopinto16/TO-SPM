@@ -86,7 +86,8 @@ function downloadPDF() {
                 jsonString_res_array_classificacao_int:jsonString_res_array_classificacao_int,
                 avaliation_date : document.getElementById("client_date_of_avaliation").value,
                 avaliation_reason :  document.getElementById("client_avaliacion_reason").value,
-                spm_type :1},
+                spm_type :1,
+                terapeuta_id: sessionStorage.setItem("login_id")},
         success: function(response) {
             console.log("sucess!");
             console.log(response);

@@ -30,8 +30,13 @@ class Account{
 
         $query = "CREATE TABLE IF NOT EXISTS terapeuta (
             id int(11) AUTO_INCREMENT,
-            EMAIL varchar(255) NOT NULL,
+            EMAIL varchar(255) NOT NULL UNIQUE,
             PASSWORD varchar(255) NOT NULL,
+            USERNAME varchar(255) NOT NULL,
+            CONTACT varchar(20),
+            REGION varchar(60),
+            BIRTH_YEAR int(4),
+            LEVEL int(1) DEFAULT '0',
             PRIMARY KEY  (ID)
             )";
 
@@ -49,11 +54,11 @@ class Account{
 
     }
 
-    public function add_new_terapeuta(string $email, string $password){
+    public function add_new_terapeuta(string $email, string $password, string $username){
         
         $sql = "SELECT id FROM terapeuta WHERE email = '$email' and password = '$password'";
 
-        $sql = "INSERT INTO terapeuta (email,password) VALUES ('$email','$password')";
+        $sql = "INSERT INTO terapeuta (email,password,username) VALUES ('$email','$password','$username')";
         
         if ($this->dbconn->connection->query($sql) === TRUE) { 
             echo "Registration Successfuly...";
@@ -66,7 +71,7 @@ class Account{
 
     public function login_terapeuta(string $email, string $password){
         
-        $sql = "SELECT count(*) FROM terapeuta WHERE email = '$email' and password = '$password'";
+        $sql = "SELECT id,username FROM terapeuta WHERE email = '$email' and password = '$password'";
         // $query = "SELECT count(*) FROM terapeuta WHERE email = :email and password = :password"; 
         // $query_params = array( ':email' => $email,':password'=> $password); 
 
@@ -77,11 +82,25 @@ class Account{
         // $stmt = $this->dbconn->connection->prepare($query);
         // $result = $stmt->execute($query_params); 
 
+        $return_array = array();
+                
+
+
         print_r($result);
         foreach($result as $row){
             print_r($row);
-            print($row['count(*)']);
-            if($row['count(*)']==1) return 1;
+            print(count($row));
+            if(count($row)){  
+                $return = array(
+                    "loggedin" => true,
+                    "login_username"=> $row['username'],
+                    "login_id"=> $row['id']
+                );
+                $return_array[] = $return;
+                print("STARTENCODE_returnarrayytsaw_text:");
+                echo json_encode($return_array);
+                return 1;
+            }
         }
 
         // $rows = $query->fetchAll();
