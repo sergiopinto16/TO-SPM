@@ -22,6 +22,7 @@ class SPM{
         // SPM_TYPE --0 CASA   1 ESCOLA   2 SPMpCASA  3 SPMpESCOLA
         $query = "CREATE TABLE IF NOT EXISTS spms (
             id int(11) AUTO_INCREMENT,
+            TERAPEUTA_ID int(11) NOT NULL,
             UTENTE_ID int(11) NOT NULL,
             SPM_TYPE int(1) NOT NULL, 
             AVALIATION_DATE DATE NOT NULL,
@@ -69,13 +70,13 @@ class SPM{
 
 
 
-    public function add_new_spm(int $utente_id,int $spm_type,string $avaliation_date,$question,$avaliation_reason,$score,$tscore,$comentario){
+    public function add_new_spm(int $utente_id,int $terapeuta_id, int $spm_type,string $avaliation_date,$question,$avaliation_reason,$score,$tscore,$comentario){
         
         
         //$sql = "SELECT id FROM terapeuta WHERE email = '$email' and password = '$password'";
         $date_avaliation = date("Y-m-d");
 
-        $sql = "INSERT INTO spms (utente_id,spm_type,AVALIATION_DATE,
+        $sql = "INSERT INTO spms (terapeuta_id, utente_id,spm_type,AVALIATION_DATE,
                     QUESTION_01,QUESTION_02,QUESTION_03,QUESTION_04,QUESTION_05,QUESTION_06,QUESTION_07,QUESTION_08,QUESTION_09,QUESTION_10
                   ,QUESTION_11,QUESTION_12,QUESTION_13,QUESTION_14,QUESTION_15,QUESTION_16,QUESTION_17,QUESTION_18,QUESTION_19,QUESTION_20
                   ,QUESTION_21,QUESTION_22,QUESTION_23,QUESTION_24,QUESTION_25,QUESTION_26,QUESTION_27,QUESTION_28,QUESTION_29,QUESTION_30
@@ -92,7 +93,7 @@ class SPM{
             GROUP_PS_COMENTARIO ,GROUP_VIS_COMENTARIO ,GROUP_AUD_COMENTARIO ,GROUP_TOQ_COMENTARIO ,GROUP_GO_COMENTARIO ,
             GROUP_CONSCCORP_COMENTARIO ,GROUP_MOVEQU_COMENTARIO ,GROUP_PLAMI_COMENTARIO,GROUP_TOTAL_COMENTARIO ,
             SPM_TABLEINSERT_DATE) 
-                  VALUES ('$utente_id','$spm_type','$avaliation_date',
+                  VALUES ('$terapeuta_id','$utente_id','$spm_type','$avaliation_date',
                     '$question[0]','$question[1]','$question[2]','$question[3]','$question[4]','$question[5]','$question[6]','$question[7]','$question[8]','$question[9]',
                     '$question[10]','$question[11]','$question[12]','$question[13]','$question[14]','$question[15]','$question[16]','$question[17]','$question[18]','$question[19]',
                     '$question[20]','$question[21]','$question[22]','$question[23]','$question[24]','$question[25]','$question[26]','$question[27]','$question[28]','$question[29]',
@@ -113,6 +114,85 @@ class SPM{
         } else {
             echo "ERROR adding to table.";
         }
+    }
+
+
+    public function get_spms(int $terapeuta_id){
+
+
+
+        $sql = "SELECT * FROM spms WHERE terapeuta_id = '$terapeuta_id'";
+        
+
+        print($sql);
+        
+        $result = $this->dbconn->connection->query($sql);
+    
+        $return_array = array();
+
+        $i = 0;
+                
+        print_r($result);
+
+        foreach($result as $row){
+            print_r($row);
+            // print(count($row));
+            // if(count($row)){  
+                $return = array(
+                    "ID" => $row['id'],
+                    "TERAPEUTA_ID"=> $row['TERAPEUTA_ID'],
+                    "UTENTE_ID"=> $row['UTENTE_ID'],
+                    "SPM_TYPE"=> $row['SPM_TYPE'],
+                    "AVALIATION_DATE"=> $row['AVALIATION_DATE'],
+                    "QUESTION_01"=> $row['QUESTION_01'],
+                    "QUESTION_02"=> $row['QUESTION_02'],
+                    "AVALIATION_REASON"=> $row['AVALIATION_REASON'],
+                    "GROUP_PS_SCORE"=> $row['GROUP_PS_SCORE'],
+                    "GROUP_VIS_SCORE"=> $row['GROUP_VIS_SCORE'],
+                    "GROUP_AUD_SCORE"=> $row['GROUP_AUD_SCORE'],
+                    "GROUP_TOQ_SCORE"=> $row['GROUP_TOQ_SCORE'],
+                    "GROUP_GO_SCORE"=> $row['GROUP_GO_SCORE'],
+                    "GROUP_CONSCCORP_SCORE"=> $row['GROUP_CONSCCORP_SCORE'],
+                    "GROUP_MOVEQU_SCORE"=> $row['GROUP_MOVEQU_SCORE'],
+                    "GROUP_PLAMI_SCORE"=> $row['GROUP_PLAMI_SCORE'],
+                    "GROUP_TOTAL_SCORE"=> $row['GROUP_TOTAL_SCORE'],
+                    
+                    "GROUP_PS_TSCORE"=> $row['GROUP_PS_TSCORE'],
+                    "GROUP_VIS_TSCORE"=> $row['GROUP_VIS_TSCORE'],
+                    "GROUP_AUD_TSCORE"=> $row['GROUP_AUD_TSCORE'],
+                    "GROUP_TOQ_TSCORE"=> $row['GROUP_TOQ_TSCORE'],
+                    "GROUP_GO_TSCORE"=> $row['GROUP_GO_TSCORE'],
+                    "GROUP_CONSCCORP_TSCORE"=> $row['GROUP_CONSCCORP_TSCORE'],
+                    "GROUP_MOVEQU_TSCORE"=> $row['GROUP_MOVEQU_TSCORE'],
+                    "GROUP_PLAMI_TSCORE"=> $row['GROUP_PLAMI_TSCORE'],
+                    "GROUP_TOTAL_TSCORE"=> $row['GROUP_TOTAL_TSCORE'],
+                    
+                    "GROUP_PS_COMENTARIO"=> $row['GROUP_PS_COMENTARIO'],
+                    "GROUP_VIS_COMENTARIO"=> $row['GROUP_VIS_COMENTARIO'],
+                    "GROUP_AUD_COMENTARIO"=> $row['GROUP_AUD_COMENTARIO'],
+                    "GROUP_TOQ_COMENTARIO"=> $row['GROUP_TOQ_COMENTARIO'],
+                    "GROUP_GO_COMENTARIO"=> $row['GROUP_GO_COMENTARIO'],
+                    "GROUP_CONSCCORP_COMENTARIO"=> $row['GROUP_CONSCCORP_COMENTARIO'],
+                    "GROUP_MOVEQU_COMENTARIO"=> $row['GROUP_MOVEQU_COMENTARIO'],
+                    "GROUP_PLAMI_COMENTARIO"=> $row['GROUP_PLAMI_COMENTARIO'],
+                    "GROUP_TOTAL_COMENTARIO"=> $row['GROUP_TOTAL_COMENTARIO'],
+                    
+                    "SPM_TABLEINSERT_DATE"=> $row['SPM_TABLEINSERT_DATE']
+                );
+                $return_array[$i] = $return;
+                $i++;
+                
+                // return 1;
+            // }
+        }
+        print("STARTENCODE_returnarrayytsaw_text:");
+        echo json_encode($return_array);
+    
+        return 1;
+    
+    
+    
+
     }
 
 }

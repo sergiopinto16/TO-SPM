@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 
 print("0.0");
-    session_start();
+    //session_start();
     include('spm.php');
 
     print("0.1");
@@ -29,6 +29,12 @@ print("0.0");
     $avaliation_date = $_POST['avaliation_date']; 
     $avaliation_reason = $_POST['avaliation_reason'];
     $spm_type = $_POST['spm_type'];
+    $terapeuta_id = $_POST['terapeuta_id'];
+    $utente_id = $_POST['utente_id'];
+
+    //230224 - modify when terapeuta and utente database are created.
+    $terapeuta_id = 0;
+    $utente_id = 0;
 
     $i = 0;
     $ignore_first_arg = true;
@@ -80,7 +86,7 @@ print("0.0");
     
     $spm->check_table_spms();
 
-    $spm->add_new_spm(0,$spm_type,$avaliation_date,$res_array_questions,$avaliation_reason,
+    $spm->add_new_spm($terapeuta_id,$utente_id,$spm_type,$avaliation_date,$res_array_questions,$avaliation_reason,
       $res_array_tscore,$res_array_score,$res_array_classificacao_int);
 
 ?>

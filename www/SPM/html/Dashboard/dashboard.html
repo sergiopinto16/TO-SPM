@@ -14,11 +14,13 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="../../static/scripts/header.js"></script>
   <script type="text/javascript" src="../../static/scripts/login.js"></script>
+  <script type="text/javascript" src="../../static/scripts/spms_getdatabase.js"></script>
+
 
   <script>
     $(function () {
       //$("#nav-bar").load("static/templeates/nav-bar.html"); 
-      $("#footer").load("static/templeates/footer.html");
+      $("#footer").load("../../static/templeates/footer.html");
     });
   </script>
 
@@ -79,6 +81,40 @@
 
    <h1>Dashboard</h1>
    <h2>ALL SPMs</h2>
+
+
+   <input type="button" value="Update table" onclick="Get_SPMs()" />
+
+
+   <table id="spmsTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>DATE</th>
+        <th>SPM_TYPE</th>
+        <th>TERAPEUTA_ID</th>
+        <th>UTENTE_ID</th>
+        <th>MOTIVO</th>
+        <th>PS</th>
+        <th>VIS</th>
+        <th>AUD</th>
+        <th>TOQ</th>
+        <th>GO</th>
+        <th>CONSCORP</th>
+        <th>MOVEQU</th>
+        <th>PLAMI</th>
+        <th>TOT</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+      </tr>
+    </tfoot>
+  </table>
 
     <!-- End Page Content -->
   </div>
