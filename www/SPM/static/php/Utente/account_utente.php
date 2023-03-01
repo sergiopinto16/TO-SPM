@@ -1,6 +1,6 @@
 <?php
 
-include('connection.php');
+include('../connection.php');
 
 class Account{
 
@@ -12,7 +12,7 @@ class Account{
     }
    
 
-    public function check_table_terapeuta(){        
+    public function check_table_utente(){        
         
 
         /*
@@ -63,6 +63,53 @@ class Account{
         } else {
             echo "ERROR adding to table.";
         }
+    }
+
+
+
+    
+
+    public function get_utente_from_terapeuta(int $terapeuta_id){
+
+
+
+        $sql = "SELECT * FROM utente WHERE terapeuta_id = '$terapeuta_id'";
+        
+
+        print($sql);
+        
+        $result = $this->dbconn->connection->query($sql);
+    
+        $return_array = array();
+
+        $i = 0;
+                
+        print_r($result);
+
+        foreach($result as $row){
+            print_r($row);
+            // print(count($row));
+            // if(count($row)){  
+                $return = array(
+                    "ID" => $row['id'],
+                    "NAME"=> $row['NAME'],
+                    "EMAIL"=> $row['EMAIL'],
+                    "TERAPEUTA_ID"=> $row['TERAPEUTA_ID'],
+                );
+                $return_array[$i] = $return;
+                $i++;
+                
+                // return 1;
+            // }
+        }
+        print("STARTENCODE_returnarrayytsaw_text:");
+        echo json_encode($return_array);
+    
+        return 1;
+    
+    
+    
+
     }
 
 
